@@ -1,0 +1,38 @@
+<?php
+ namespace backend\models;
+ use yii\db\ActiveRecord;
+ use yii\data\ActiveDataProvider;
+
+ class Order extends  ActiveRecord{
+
+     /*
+      * 获得用户的名称
+       */
+     public function  getUser(){
+         return $this->hasOne(User::className(),['id'=>'userId']);
+     }
+     /*
+      * 获得订单详情
+       */
+     public function  getOrderdetail(){
+
+         return $this->hasMany(OrderDetail::className(),['orderId'=>'id']);
+     }
+     /*
+      * 获得收货地址
+       */
+     public function  getAddress(){
+         return $this->hasOne(User::className(),['id'=>'addressId']);
+     }
+
+     public  function  search($params){
+         $query=Order::find();
+         $query->andFilterWhere(['like', 'orderStatus', $this->orderStatus])
+             ->andFilterWhere(['like', 'orderMoney', $this->orderMoney])
+             ->andFilterWhere(['equal', 'orderTime', $this->orderTime]);
+         $dataProvider=new ActiveDataProvider([
+             'query'=>$query,
+         ]);
+         return $dataProvider;
+     }
+ }

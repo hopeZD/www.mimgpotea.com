@@ -1,0 +1,78 @@
+<?php
+    namespace app\models;
+    use \yii\db\ActiveRecord;
+    use common\widgets\Tool;
+    use yii\web\Session;
+    use common\widgets;
+    class AdminUser extends  ActiveRecord{
+         /*
+          * 通过username查找用户
+          */
+        public function findUserByUserName($username){
+            $user = AdminUser::find()->where(array('username' => $username))->one();
+            if ($user) {
+                return new static($user);
+            }
+            return null;
+        }
+        /*
+         * 通过id查找用户
+         */
+        public function findUserByUserId($id){
+            $user = AdminUser::find()->where(array('id' => $id))->one();
+            if ($user) {
+                return new static($user);
+            }
+            return null;
+        }
+        /*
+         * 添加一个新用户
+         * @pram $username -用户名
+         * @pram $password -密码
+         * @pram $mobile - 手机号码
+         * @pram $role -角色
+         * @pram $status -用户状态
+         *
+         * @return true -用户添加成功
+         * @retun false -用户添加失败
+         */
+        public function addUser($username,$password,$mobile,$role,$status){
+            //用户名已存在
+            if($this->findUserByUserName($username)){
+               return false;
+            }
+            $user=new AdminUser();
+            $user->username=$username;
+            $user->password=md5($password);
+            $user->status=$status;
+            $user->mobile=$mobile;
+            $user->role=$role;
+            $user->loginIp=Tool::getIp();
+            if($user->save()>0){
+                return true;
+            }
+            return false;
+        }
+        /*
+         * 检查用户是否登录
+         * @return false -用户尚未登录
+         * @return user -返回用户对象
+         * */
+        public function checkUserIsLogin(){
+
+            $userId=\Yii::$app->session->get(widgets\Variable::$session_userId_str);
+            $user=$this->findUserByUserId($userId);
+//            print_r($user);
+            if(!$user){
+                return false;
+            }
+            return $user;
+        }
+        /*
+         * 退出登录 清除session数据
+         */
+        public function  logOut(){
+            \Yii::$app->session->set(widgets\Variable::$session_userId_str,'');
+            \Yii::$app->session->destroy();
+        }
+    }

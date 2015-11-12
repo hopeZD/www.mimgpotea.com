@@ -1,0 +1,31 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Administrator
+ * Date: 2015/9/18
+ * Time: 12:43
+ */
+namespace backend\controllers;
+use yii\web\Controller;
+use yii\web\Session;
+use app\models\AdminUser;
+use common\Widgets\Variable;
+class ActivitymangerController extends  Controller{
+    public function actionActivitylist()
+    {
+        $user=new AdminUser();
+        if(!$user->checkUserIsLogin()){
+            $this->redirect(Variable::$home_url);
+            return;
+        }
+        return $this->render(Variable::$activityList_view);
+    }
+    public function actionActivitywater(){
+        $user=new AdminUser();
+        if(!$user->checkUserIsLogin()){
+            $this->redirect(Variable::$home_url);
+            return;
+        }
+        return $this->render(Variable::$activityWater_view);
+    }
+}

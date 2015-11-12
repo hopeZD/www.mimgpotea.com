@@ -1,0 +1,208 @@
+<?php
+    namespace common\widgets;
+    class  GlobalArray {
+        /*
+         * 用户性别数组
+         */
+        public static $userSexArray=[
+            '0'=>'男',
+            '1'=>'女',
+            '2'=>'保密'
+        ];
+        /*
+         * 用户状态数组
+         */
+        public static $userStatusArray=[
+            '0'=>'正常状态',
+            '1'=>'冻结',
+        ];
+        /*
+        * 第三方登录类型数组
+        */
+        public static $userJionBindTypeArray=[
+            '0'=>'qq',
+            '1'=>'新浪微博',
+            '2'=>'微信',
+            '3'=>'支付宝',
+        ];
+        /*
+         * 交易类型数组
+         */
+        public static $businessTypeArray=[
+            '0'=>'收入',
+            '1'=>'支出',
+        ];
+        /*
+       * 流水类型类型数组
+       */
+        public static $logTypeArray=[
+            '0'=>'订单支付',
+            '1'=>'充值',
+            '2'=>'提现',
+            '3'=>'赠送',
+        ];
+        /*
+         * 第三方登录绑定状态数组
+         */
+        public static $userJionBindStatusArray=[
+            '0'=>'取消绑定',
+            '1'=>'绑定成功',
+        ];
+        /*
+         * 用户注册来源数组
+         */
+        public static $userRegComeFromArray=[
+            '0'=>'WEB',
+            '1'=>'WAP',
+            '2'=>'APP'
+        ];
+        /*
+         * 允许上传的图片后缀名
+         */
+        public  static   $imageTypeArray=[
+            'png',
+            'jpg',
+            'jpeg',
+            'gif',
+            'PNG',
+            'JPG',
+            'JPEG',
+            'GIF'
+        ];
+        /*
+         * 产品状态数组
+         */
+        public static $productStatusArray=[
+            '0'=>'未上架',
+            '1'=>'销售中',
+            '2'=>'已下架'
+        ];
+        /*
+         * 订单状态数组
+         */
+        public static $orderStatusArray=[
+            '0'=>'待付款',
+            '1'=>'待发货',
+            '2'=>'已发货',
+            '3'=>'退款中',
+            '4'=>'待评论',
+            '5'=>'交易成功',
+            '6'=>'交易关闭'
+        ];
+        /*
+         *支付方式数组
+         */
+        public static $orderPayMethodArray=[
+            '0'=>'支付宝',
+            '1'=>'微信支付',
+            '2'=>'余额支付',
+            ];
+        /*
+         *订单来源数组
+         */
+        public static $orderComeFromArray=[
+            '0'=>'WEB',
+            '1'=>'WAP',
+            '2'=>'APP'
+        ];
+        /*
+         *商家状态数组
+         */
+        public static $sellerStatusArray=[
+            '0'=>'待审核',
+            '1'=>'审核通过',
+            '2'=>'已冻结'
+        ];
+        /*
+         * 产品属性状态数组
+         */
+        public static  $productAttributeStatusArray=[
+            '0'=>'无效',
+            '1'=>'有效'
+        ];
+        /*
+         * 文章类型数组
+         */
+        public static $articleTypeArray=[
+            '0'=>'长评论',
+            '1'=>'新闻',
+            '2'=>'商家介绍',
+            '3'=>'产品介绍'
+        ];
+        /*
+         * 文章状态数组
+         */
+        public static $articleStatusArray=[
+            '0'=>'待审核',
+            '1'=>'审核通过',
+            '2'=>'已撤销',
+        ];
+        /*
+         * 是否置顶数组
+         */
+        public static $isTopArray=[
+            '0'=>'不置顶',
+            '1'=>'置顶',
+        ];
+        /*
+        * 文章来源数组
+        */
+        public static $articleSourceArray=[
+            '0'=>'自编',
+            '1'=>'网页抓取',
+        ];
+        /*
+        * 文章来源数组
+        */
+        public static $commentTypeArray=[
+            '0'=>'文章',
+            '1'=>'产品',
+        ];
+        /*
+       * 评论审核状态数组
+       */
+        public static $commentStatusArray=[
+            '0'=>'待审核',
+            '1'=>'审核通过',
+            '2'=>'已撤销'
+        ];
+        /*
+         * 素材类型数组
+         */
+        public static $materialTypeArray=[
+            '0'=>'图片',
+            '1'=>'视频',
+            '2'=>'音频'
+        ];
+        /*
+        * 素材展示方式数组
+        */
+        public static $materialIsShowArray=[
+            '0'=>'可展示在PC和移动端',
+            '1'=>'只展示在PC端',
+            '2'=>'只展示在移动端'
+        ];
+        /*
+        * 活动展示方式数组
+        */
+        public static $activityIsShowArray=[
+            '0'=>'可展示在PC和移动端',
+            '1'=>'只展示在PC端',
+            '2'=>'只展示在移动端'
+        ];
+        /*
+        * 短信类型数组
+        */
+        public static $smsLogTypeArray=[
+            '0'=>'注册',
+            '1'=>'发货通知',
+            '2'=>'app下载短信'
+        ];
+        /*
+        * 快递状态数组
+        */
+        public static $expressStatusArray=[
+            '0'=>'可用',
+            '1'=>'不可用',
+        ];
+    }

@@ -1,0 +1,32 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Administrator
+ * Date: 2015/9/29
+ * Time: 15:18
+ */
+
+namespace frontend\models;
+use \yii\db\ActiveRecord;
+use common\widgets;
+
+class Product extends  ActiveRecord
+{
+    /*
+    * 根据产品id查询
+    */
+    public function findByProductId($id){
+        $ProductId = Product::find()->where(array('id' => $id))->one();
+        if (!$ProductId) {
+            return false;
+        }
+        return $ProductId;
+    }
+
+    // 获取订单中所有订单详情
+//    public function getOrderDetail()
+//    {
+//
+//        return $this->hasMany(OrderDetail::className(), ['productId' => 'id']);
+//    }
+}

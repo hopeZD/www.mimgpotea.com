@@ -1,0 +1,28 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Administrator
+ * Date: 2015/9/17
+ * Time: 18:40
+ */
+    namespace backend\controllers;//控制器必须有命名空间
+    use app\models\AdminUser;
+    use common\widgets\Variable;
+    use yii\data\Pagination;
+    use \yii\web\Controller;
+
+ class UsermangerController extends  Controller{
+     public function actionIndex()
+     {
+         $user=new AdminUser();
+         if(!$user->checkUserIsLogin()){
+             $this->redirect(Variable::$home_url);
+             return;
+         }
+         $query=AdminUser::find()->where(['status'=>1]);
+         $countQuery=clone $query;
+         $pages=new Pagination();
+
+         return $this->render(Variable::$userMange_view);
+     }
+}

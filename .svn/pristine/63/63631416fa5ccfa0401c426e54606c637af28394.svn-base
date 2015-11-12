@@ -1,0 +1,55 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Administrator
+ * Date: 2015/9/18
+ * Time: 14:51
+ */
+namespace backend\controllers;
+use yii\web\Controller;
+use yii\web\Session;
+use app\models\AdminUser;
+use common\widgets\Tool;
+use common\widgets\Variable;
+class WebsettingmangerController extends Controller{
+    public function actionAdminusermanger(){
+        $user=new AdminUser();
+        if(!$user->checkUserIsLogin()){
+            $this->redirect(Variable::$home_url);
+            return;
+        }
+        return $this->render(Variable::$adminUserManger_view);
+    }
+    public function actionSetting(){
+        $user=new AdminUser();
+        if(!$user->checkUserIsLogin()){
+            $this->redirect(Variable::$home_url);
+            return;
+        }
+        return $this->render(Variable::$setting_view);
+    }
+    public function actionArea(){
+        $user=new AdminUser();
+        if(!$user->checkUserIsLogin()){
+            $this->redirect(Variable::$home_url);
+            return;
+        }
+        return $this->render(Variable::$area_view);
+    }
+    public function actionSmslog(){
+    $user=new AdminUser();
+    if(!$user->checkUserIsLogin()){
+        $this->redirect(Variable::$home_url);
+        return;
+    }
+    return $this->render(Variable::$smsLog_view);
+}
+    public function actionExpress(){
+        $user=new AdminUser();
+        if(!$user->checkUserIsLogin()){
+            $this->redirect(Variable::$home_url);
+            return;
+        }
+        return $this->render(Variable::$express_view);
+    }
+}

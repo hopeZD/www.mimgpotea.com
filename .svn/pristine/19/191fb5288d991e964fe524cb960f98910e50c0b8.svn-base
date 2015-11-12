@@ -1,0 +1,5 @@
+<a href="<?php echo \common\widgets\FVariable::$userViporder_url?>" <?php echo $order_vip == "ordered" ? "class='active'":"" ?>>待支付（111111111）</a>
+<a href="<?php echo \common\widgets\FVariable::$userViporderstay_url?>" <?php echo $order_vip == "orderstay" ? "class='active'":"" ?>>待收货（1）</a>
+<a href="<?php echo \common\widgets\FVariable::$userViporderfinish_url?>" <?php echo $order_vip == "orderfinish" ? "class='active'":"" ?>>已完成（1）</a>
+<a href="<?php echo \common\widgets\FVariable::$userVipordercancel_url?>" <?php echo $order_vip == "ordercancel" ? "class='active'":"" ?>>已取消（1）</a>
+<div class="order-line"></div>

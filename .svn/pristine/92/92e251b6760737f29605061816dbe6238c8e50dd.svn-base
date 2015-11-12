@@ -1,0 +1,21 @@
+@mixin background-color($color: #f2f2f2){
+    background-color: $color;
+}
+@mixin opacity($opacity){
+    opacity:$opacity;
+    filter: alpha(opacity=$opacity*100);
+} 
+@mixin transition($transition: all 0.5s){
+    -webkit-transition: $transition;
+    -o-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    transition: $transition;
+}
+@mixin transform($transform: scale(1.1)){
+    -webkit-transform: $transform;
+    -o-transform: $transform;
+    -moz-transform: $transform;
+    -ms-transform: $transform;
+    transform: $transform;
+}

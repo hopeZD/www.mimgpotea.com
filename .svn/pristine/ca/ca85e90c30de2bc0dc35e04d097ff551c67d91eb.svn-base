@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="orderPayMent">
+        <div class="orderPayMent-head cl">
+           <div class="orderpm-head-left">
+               <h4>订单提交成功，请您尽快付款！ 订单号：<?=$orderNo->orderNo?></h4>
+               <p>请您在提交订单后 <span>24小时</span> 内完成支付，否则订单会自动取消。</p>
+           </div>
+           <div class="orderpm-head-right">
+               <em>应付金额：</em><span>￥<?=$orderNo->orderMoney?></span>
+           </div>
+        </div>
+        <div class="orderPayMent-con">
+            <a href="<?php echo common\widgets\FVariable::$userPaysuccess_url ?>"><img src="/img/fx2.png" />使用微信支付</a>
+            <a href=""><img src="/img/u102.png" />使用支付宝支付</a>
+         </div>
+     </div>
+ </div>

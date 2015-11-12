@@ -1,0 +1,4 @@
+<a href="<?php echo \common\widgets\FVariable::$userVipreturn_url?>" <?php echo $return_vip == "returned" ? "class='active'":"" ?>>退货中（111111111）</a>
+<a href="<?php echo \common\widgets\FVariable::$userVipreturnfinish_url?>" <?php echo $return_vip == "returnedfin" ? "class='active'":"" ?>>已完成（1）</a>
+<a href="<?php echo \common\widgets\FVariable::$userVipreturncancel_url?>" <?php echo $return_vip == "returnedcel" ? "class='active'":"" ?>>已取消（1）</a>
+<div class="order-line"></div>

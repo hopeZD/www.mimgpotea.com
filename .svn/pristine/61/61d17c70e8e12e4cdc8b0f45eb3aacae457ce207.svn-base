@@ -1,0 +1,149 @@
+
+    <div class="teadetails" id="teadetails">
+
+	<div class="section">
+
+			<div class="teaDet container">
+				<p class="teaDet-share">喜大奔普：<a href=""><img src="/img/fx2.png" /></a><a href=""><img src="/img/fx1.png" /></a><a href=""><img src="/img/u109.png" /></a><a href=""><img src="/img/fx3.png" /></a><a href=""><img src="/img/fx5.png" /></a></p>
+				
+				<div class="teaDet-con">
+					<div class="teaDet-con-left">
+						<div class="bigimg"><img src="/img/index_11.png" class="img-responsive" /></div>
+						<div class="smallimg cl">
+							<div><img src="/img/index_11.png" class="img-responsive" /></div>
+							<div><img src="/img/index_11.png" class="img-responsive" /></div>
+							<div><img src="/img/index_11.png" class="img-responsive" /></div>
+							<div><img src="/img/index_11.png" class="img-responsive" /></div>
+						</div>
+					</div>
+					<div class="teaDet-con-right">
+						<h2 class="teaDet-right-name">日照名坡春茶</h2>
+						<div class="teaDet-list">
+							<div>
+								<div class="teaDet-list-name"><b>产</b>地：</div>
+								<div class="teaDet-list-con"><span class="active">山东日照</span><span>山东日照</span><span>山东日照</span><span>山东日照</span></div>
+							</div>
+							<div>
+								<div class="teaDet-list-name"><b>工</b>艺：</div>
+								<div class="teaDet-list-con"><span class="active">山东日照</span><span>山东日照</span><span>山东日照</span><span>山东日照</span></div>
+							</div>
+							<div>
+								<div class="teaDet-list-name">外包装：</div>
+								<div class="teaDet-list-con"><span class="active">山东日照</span><span>山东日照</span><span>山东日照</span><span>山东日照</span></div>
+							</div>
+							<div>
+								<div class="teaDet-list-name">内包装：</div>
+								<div class="teaDet-list-con"><span class="active">山东日照</span><span>山东日照</span><span>山东日照</span><span>山东日照</span></div>
+							</div>
+							
+							<div class="teaDet-right-price">
+								<div class="teaDet-list-name"><b>售</b>价：</div>
+								<div class="teaDet-list-con">¥99.00 / 1包 / 9g，折合¥11.00 / 1g</div>
+							</div>
+							
+							<div class="teaDet-right-number">
+								<div class="teaDet-list-name"><b>数</b>量：</div>
+								<div class="teaDet-list-con">
+									<span class="active">10包<br />￥298.00</span>
+									<span>10包<br />￥298.00</span>
+									<span>10包<br />￥298.00</span>
+									<span>10包<br />￥298.00</span>
+									<span class="last-span"><b class="last-span-cut">-</b><input type="text" class="teaDet-text" value="4" /><b class="last-span-plus">+</b><br />￥298.00</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="teaDet-bottom">
+					你选购了一下产品：日照名坡春茶 日照名坡 深度加工 简单稳重+绿色心情 3包。 共需支付：<span>￥268.00</span>
+					<a href="<?php echo common\widgets\FVariable::$userMyshopping_url ?>">立即购买</a>
+				</div>
+			</div>		
+	</div>
+
+    <div class="teadetails-con teadetails-coned container">
+
+	<div class="teadetails-conHead">
+		<a href="<?php echo common\widgets\FVariable::$productTeadetails_url ?>">商品介绍</a>
+		<a href="<?php echo common\widgets\FVariable::$productTeadetailsrate_url ?>" class="active">商品评价</a>
+		<div class="teadeta-line"></div>
+	</div>
+
+		<ul class="teadetailsrate-ul">
+			<li>
+				<div class="teade-lileft">
+					<p>宝贝质量很好，外观很好看，简单时尚，箱体很轻，使用很好，卖家服务态度好，物流快。</p>
+					<p class="bq"><span>很好</span><span>很好很好</span><span>很好哈哈哈</span><span>很好</span></p>
+					<p>2015-03-26 26:15:12</p>
+				</div>
+				<div class="teade-licenter">
+					<p>满意度：<img src="/img/u231.png" /><img src="/img/u231.png" /><img src="/img/u231.png" /><img src="/img/u231.png" /><img src="/img/u231.png" /></p>
+				</div>
+				<div class="teade-liright">
+					<p>刘琳琳</p>
+					<p class="time">2015-03-26 26:15:12 购买</p>
+				</div>
+			</li>
+
+			<li>
+				<div class="teade-lileft">
+					<p>宝贝质量很好，外观很好看，简单时尚，箱体很轻，使用很好，卖家服务态度好，物流快。</p>
+					<p class="bq"><span>很好</span><span>很好很好</span><span>很好哈哈哈</span><span>很好</span></p>
+					<p>2015-03-26 26:15:12</p>
+				</div>
+				<div class="teade-licenter">
+					<p>满意度：<img src="/img/u231.png" /><img src="/img/u231.png" /><img src="/img/u231.png" /><img src="/img/u231.png" /><img src="/img/u231.png" /></p>
+				</div>
+				<div class="teade-liright">
+					<p>刘琳琳</p>
+					<p class="time">2015-03-26 26:15:12 购买</p>
+				</div>
+			</li>
+
+			<li>
+				<div class="teade-lileft">
+					<p>宝贝质量很好，外观很好看，简单时尚，箱体很轻，使用很好，卖家服务态度好，物流快。</p>
+					<p class="bq"><span>很好</span><span>很好很好</span><span>很好哈哈哈</span><span>很好</span></p>
+					<p>2015-03-26 26:15:12</p>
+				</div>
+				<div class="teade-licenter">
+					<p>满意度：<img src="/img/u231.png" /><img src="/img/u231.png" /><img src="/img/u231.png" /><img src="/img/u231.png" /><img src="/img/u231.png" /></p>
+				</div>
+				<div class="teade-liright">
+					<p>刘琳琳</p>
+					<p class="time">2015-03-26 26:15:12 购买</p>
+				</div>
+			</li>
+
+			<li>
+				<div class="teade-lileft">
+					<p>宝贝质量很好，外观很好看，简单时尚，箱体很轻，使用很好，卖家服务态度好，物流快。</p>
+					<p class="bq"><span>很好</span><span>很好很好</span><span>很好哈哈哈</span><span>很好</span></p>
+					<p>2015-03-26 26:15:12</p>
+				</div>
+				<div class="teade-licenter">
+					<p>满意度：<img src="/img/u231.png" /><img src="/img/u231.png" /><img src="/img/u231.png" /><img src="/img/u231.png" /><img src="/img/u231.png" /></p>
+				</div>
+				<div class="teade-liright">
+					<p>刘琳琳</p>
+					<p class="time">2015-03-26 26:15:12 购买</p>
+				</div>
+			</li>
+		</ul>
+
+		<ul class="adminpage">
+			<li class="adminpage-first"><a href=""><img src="/img/u107.png" /></a></li>
+			<li class="adminpage-prev"><a href=""><img src="/img/u105.png" /></a></li>
+			<li><a href="">1</a></li>
+			<li class="active"><a href="">2</a></li>
+			<li class="adminpage-point"><a href="">...</a></li>
+			<li><a href="">45</a></li>
+			<li><a href="">46</a></li>
+			<li class="adminpage-next"><a href=""><img src="/img/u111.png" /></a></li>
+			<li class="adminpage-last"><a href=""><img src="/img/u109.png" /></a></li>
+			<li class="adminpage-search"><input type="text" /><a href="">GO</a></li>
+		</ul>
+	</div>
+</div>
+

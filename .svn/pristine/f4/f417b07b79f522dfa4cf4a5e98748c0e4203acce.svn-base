@@ -1,0 +1,26 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Administrator
+ * Date: 2015/10/22
+ * Time: 9:23
+ */
+
+namespace frontend\models;
+use yii\db\ActiveRecord;
+
+
+class Article extends  ActiveRecord
+{
+
+    /**根据id查询文章*/
+    public function findById($userId){
+
+        $article = Article::find()->where(array('userId'=>$userId))->orderBy(array('publishTime'=>SORT_DESC))->one();
+        if(!$article){
+            return false;
+        }
+       return $article;
+    }
+
+}

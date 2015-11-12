@@ -1,0 +1,137 @@
+<?php
+use common\widgets\FVariable;
+use common\widgets\GlobalArray;
+?>
+    
+    <div class="container">
+    	<div class="myorder">
+    		<div class="myorder-head">
+	    		<a href="<?=FVariable::$userVipcenter_url?>">会员中心</a>
+	    		<span>></span>
+	    		<a href="<?=FVariable::$userViporder_url?>">我的订单</a>
+	    		<span>></span>
+	    	          订单号 <?=$details->orderNo?>
+	    	    <div class="myorder-head-r"><a href="javascript:orderCancel(<?=$details->id?>);">取消订单</a></div>
+	    	</div>
+	    	
+	    	<div class="myorder-practice cl">
+	    		<div class="finish">
+	    			<div>
+	    				<p>提交订单</p>
+		    			<p><?php echo date('Y-m-d',strtotime($details->orderTime)); ?></p>
+		    			<p><?php echo date('H:i:s',strtotime($details->orderTime)); ?></p>
+	    			</div>	    			
+	    		</div>
+	    		<div class="next">
+	    			<div>
+		    			<p>等待付款</p>
+		    			<p><a href="">使用支付宝支付</a></p>
+		    			<p><a href="">使用微信支付</a></p>
+	    			</div>
+	    		</div>
+	    		<div>
+	    			<div>
+	    			    <p>商品出库</p>
+	    			</div>
+	    		</div>
+	    		<div>
+	    			<div>
+	    			    <p>等待收货</p>
+	    			</div>
+	    		</div>
+	    		<div>
+	    			<div>
+	    			   <p>完成</p>
+	    			</div>
+	    		</div>
+	    	</div>
+	    	
+<!--	    	<div class="myorder-handle">-->
+<!--	    		<div class="myorder-handle-h">-->
+<!--	    			<div>处理时间</div>-->
+<!--	    			<div>处理内容</div>-->
+<!--	    			<div>操作人</div>-->
+<!--	    		</div>-->
+<!--	    		<div class="myorder-handle-c">-->
+<!--	    			<div>-->
+<!--		    			<div>--><?//=$details->orderTime?><!--</div>-->
+<!--		    			<div>你提交了订单，请等待系统确认。</div>-->
+<!--		    			<div>客户</div>-->
+<!--	    			</div>-->
+<!--	    		</div>-->
+<!--	    	</div>-->
+	    	
+	    	<div class="myorder-table">
+	    		<table cellpadding="0" cellspacing="0" border="0">
+	    			<tr>
+	    				<td class="order-name">订单编号</td>
+	    				<td><?=$details->orderNo?></td>
+	    				<td class="order-name">订单日期</td>
+	    				<td><?=$details->orderTime?></td>
+	    				<td class="order-name">订单状态</td>
+	    				<td><?=GlobalArray::$orderStatusArray[$details->orderStatus]?></td>
+	    				<td class="order-name">订单金额</td>
+	    				<td>￥<?=$details->orderMoney?></td>
+	    			</tr>
+	    			<tr>
+	    				<td class="order-name">收件人</td>
+						<?php
+						$address = \frontend\models\UserAddress::findOne($details->addressId);
+						$addressName = $address->userName;
+						$addressPhone = $address->userMobile;
+						$province = \frontend\models\Area::findById($address->provinceId);
+						$city = \frontend\models\Area::findById($address->cityId);
+						$area = \frontend\models\Area::findById($address->areaId);
+						?>
+	    				<td><?=$addressName?></td>
+	    				<td class="order-name">手机号码</td>
+	    				<td><?=$addressPhone?></td>
+	    				<td class="order-name">配送地址</td>
+	    				<td colspan="3"><?=$province->name." ".$city->name." ".$area->name." ".$address->detailAddress?></td>
+	    			</tr>
+	    		</table>
+	    	</div>
+	    	
+	    	<div class="myorder-list">
+			   <div class="shop-head">					
+					<div>图片</div>
+					<div>商品名称</div>
+					<div>单价</div>
+					<div>数量</div>
+					<div>小计</div>									
+				</div>
+				<div class="myshop-table">
+					<?php
+					$productDetails = \frontend\models\OrderDetail::findByOrderDetail($details->id);
+//					$product = \frontend\models\Product::
+					$order = \frontend\models\Order::findOne($details->id);
+					$orderDetail = $order->getProductDetail()->all();
+					foreach($orderDetail as $detk=>$detv){
+						$product = \frontend\models\OrderDetail::findOne($detv['id']);
+						$product = $product->getProduct()->one();
+
+					?>
+				   <div class="shop-tr">
+					   	<div class="shop-img"><img src="<?=GlobalArray::$imgUrlArray['0'].$product['productLogo']?>" class="img-responsive" /></div>
+						<div class="shop-name">
+							<p><?=$product['productName']?></p>
+							<div class="shop-name-table">
+								<div class="shop-n-tr">
+								    <div><span>产</span>地：<?=$product['origin']?></div>
+								    <div><span>工</span>艺：<?=$product['artsId']?></div>
+								</div>								
+<!--								<div class="shop-n-tr">-->
+<!--								    <div>内包装：山东日照</div>-->
+<!--									<div>外包装：山东日照</div>-->
+<!--								</div>	-->
+							</div>
+						</div>
+						<div class="shop-price">￥<?=$product['productPrice']?></div>
+						<div class="shop-number"><?=$detv['productCount']?>包</div>
+						<div class="shop-total">￥<?=$detv['productPrice']?></div>
+				   </div>
+					<?php }?>
+				</div> 
+			</div>
+    	</div>    	
+    </div>

@@ -1,0 +1,60 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Administrator
+ * Date: 2015/9/17
+ * Time: 11:23
+ */
+namespace frontend\models;
+
+use Yii;
+use yii\base\Model;
+use frontend\models\User;
+use common\Widgets\FVariable;
+
+class UserLoginForm extends Model
+{
+    public $nickName;
+    public $password;
+    public $verifyCode;
+
+    private $_user = false;
+    private $_identity;
+
+    public function rules()
+    {
+        return array(
+            [['nickName','password'],'trim'],
+            [['nickName','password'],'default'],
+            ['nickName','required','message'=>'*手机或邮箱不能为空'],
+            ['password','required','message'=>'*密码不能为空'],
+            ['verifyCode', 'captcha','message'=>'*验证码不正确！'],
+            ['nickName','validateNickName'],
+            ['password','validatePassword'],
+        );
+    }
+
+    public function validateNickName($attribute, $params)
+    {
+        if (!$this->hasErrors()) {
+            $UserModel = new User();
+        $User = $UserModel->findUserByUserName($this->nickName);
+            if (!$User) {
+                $this->addError($attribute, '*用户或邮箱错误！');
+            }
+
+        }
+    }
+    public function validatePassword($attribute, $params)
+    {
+        if (!$this->hasErrors()) {
+            $UserModel = new User();
+            $User = $UserModel->findUserByUserName($this->nickName);
+            if ($User->password !== md5($this->password)) {
+                $this->addError($attribute, '*密码错误！');
+            }
+
+        }
+    }
+
+}

@@ -1,0 +1,2655 @@
+@charset "UTF-8";
+/****所有茶园样式开始****/
+.teagarden {
+  margin-top: 50px;
+}
+.teagarden > .teagarden-title {
+  color: #999;
+  font-size: 28px;
+  text-align: center;
+}
+.teagarden > .teagarden-con {
+  margin-top: 50px;
+}
+.teagarden > .garden-more {
+  margin-top: 30px;
+  text-align: center;
+}
+.teagarden > .garden-more > a {
+  display: inline-block;
+  width: 260px;
+  line-height: 48px;
+  height: 50px;
+  border: 1px solid #cc0000;
+  color: #cc0000;
+  font-size: 20px;
+}
+
+.teagarden-con .garden-list {
+  float: left;
+  width: 380px;
+  height: 250px;
+  overflow: hidden;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.teagarden-con .garden-list:nth-of-type(3n) {
+  margin-right: 0;
+}
+.teagarden-con .garden-list .img-responsive {
+  height: 100%;
+  display: block;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.teagarden-con .garden-list .garden-list-text {
+  position: absolute;
+  font-size: 24px;
+  color: #fff;
+  line-height: 250px;
+  left: 0;
+  top: 0;
+  text-align: center;
+  width: 100%;
+}
+.teagarden-con .garden-list > a:hover .img-responsive {
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  transition: all 0.6s;
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.teagarden-con > .garden-hide {
+  display: none;
+}
+
+/****所有茶园样式结束****/
+/****茶园介绍样式开始****/
+.pageContain > .section {
+  padding-top: 156px;
+}
+.pageContain > .section .page-txt {
+  color: #a1a1a1;
+  line-height: 35px;
+  text-indent: 2em;
+  padding: 0 50px;
+}
+.pageContain > .section .page-img {
+  display: block;
+  padding: 0 50px 20px;
+}
+
+#headerroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.section-foot .footer {
+  margin-top: 0;
+  padding: 15px 0;
+}
+.section-foot .copyright {
+  margin-top: 10px;
+}
+
+.pagenavBar {
+  position: fixed;
+  right: 50px;
+  height: 100%;
+  top: 50%;
+  margin-top: -80px;
+}
+.pagenavBar li a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #E4E4E4;
+  margin-bottom: 10px;
+  position: relative;
+  color: #a1a1a1;
+  text-align: center;
+  line-height: 30px;
+}
+.pagenavBar li a .pageli-row {
+  border-style: solid;
+  border-color: transparent transparent transparent #E4E4E4;
+  height: 0;
+  width: 0;
+  border-width: 15px;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  display: none;
+}
+.pagenavBar li a .pageli-txt {
+  position: absolute;
+  height: 30px;
+  line-height: 30px;
+  width: 100px;
+  text-align: center;
+  bottom: 0;
+  right: 50px;
+  background-color: #E4E4E4;
+  display: none;
+}
+.pagenavBar li.active a {
+  background-color: #AEAEAE;
+  color: #666;
+}
+.pagenavBar li.active a .pageli-row {
+  border-color: transparent transparent transparent #AEAEAE;
+  display: block;
+}
+.pagenavBar li.active a .pageli-txt {
+  background-color: #AEAEAE;
+  display: block;
+}
+.pagenavBar li:hover a .pageli-row, .pagenavBar li:hover a .pageli-txt {
+  display: block;
+}
+
+/****茶园介绍样式结束****/
+/****分享我的故事样式开始****/
+.teashare {
+  margin-top: 90px;
+}
+.teashare .teashare-head {
+  margin-bottom: 20px;
+}
+.teashare .teashare-head .share-text {
+  border: 1px solid #ddd;
+  height: 40px;
+  line-height: 40px;
+  width: 600px;
+  padding-left: 8px;
+}
+.teashare .teashare-con .share-textarea {
+  border: 1px solid #ddd;
+  padding: 8px;
+  resize: none;
+  width: 100%;
+  height: 400px;
+}
+.teashare .teashare-btn {
+  margin-top: 20px;
+}
+.teashare .teashare-btn .share-btn {
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #DD5A5A;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+}
+.teashare .teashare-btn .share-btn:hover {
+  background-color: #e55e5e;
+}
+
+/****分享我的故事样式结束****/
+/****以茶会友样式开始****/
+.ceremony {
+  margin-top: 50px;
+}
+.ceremony > .ceremony-title {
+  text-align: center;
+  font-size: 28px;
+  color: #999;
+}
+
+.ceremony-con {
+  margin-top: 50px;
+  padding: 0 100px;
+}
+.ceremony-con > .ceremony-con-list {
+  width: 230px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  float: left;
+}
+.ceremony-con > .ceremony-con-list:nth-of-type(4n) {
+  margin-right: 0;
+}
+
+.ceremony-con-list > .cere-head {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+.ceremony-con-list > .cere-head > p > a {
+  color: #949494;
+  font-size: 18px;
+}
+.ceremony-con-list > .cere-head > span {
+  color: #c9c9c9;
+  font-size: 12px;
+}
+.ceremony-con-list > .cere-con {
+  color: #c9c9c9;
+  padding: 20px;
+  position: relative;
+  text-indent: 2em;
+  line-height: 30px;
+}
+.ceremony-con-list > .cere-con > span {
+  font-size: 72px;
+  color: #d7d7d7;
+  display: inline-block;
+  line-height: 40px;
+  position: absolute;
+  left: -52px;
+  top: 20px;
+}
+.ceremony-con-list > .cere-con > span.cere-span-last {
+  bottom: 0;
+  top: auto;
+  left: auto;
+  right: -22px;
+}
+.ceremony-con-list > .cere-bottom {
+  text-align: right;
+  padding: 20px;
+  padding-top: 0;
+}
+.ceremony-con-list > .cere-bottom > span {
+  margin-left: 15px;
+  color: #cc0000;
+  font-size: 12px;
+}
+.ceremony-con-list > .cere-bottom > span > img {
+  width: 18px;
+  height: 18px;
+}
+
+/****以茶会友样式结束****/
+/****以茶会友详情样式开始****/
+.ceredetail {
+  margin: 40px;
+}
+.ceredetail > div {
+  background-color: #fff;
+  margin-bottom: 15px;
+}
+.ceredetail > .ceredetail-one {
+  padding: 25px;
+}
+
+.ceredetail-one > .cere-one-title {
+  color: #949494;
+  font-size: 24px;
+  font-weight: 400;
+}
+.ceredetail-one > .cere-one-subtitle {
+  margin-top: 8px;
+}
+.ceredetail-one > .cere-one-subtitle > span {
+  color: #bcbcbc;
+  font-size: 12px;
+  line-height: 16px;
+}
+.ceredetail-one > .cere-one-subtitle > span > img {
+  margin-right: 5px;
+  vertical-align: -3px;
+}
+.ceredetail-one > .cere-one-subtitle > span.detail-name {
+  margin-left: 15px;
+  width: 150px;
+  display: inline-block;
+}
+.ceredetail-one > .cere-one-subtitle > span.detail-browse {
+  margin-right: 15px;
+}
+.ceredetail-one > .cere-one-subtitle > span.detail-comment {
+  margin-right: 15px;
+}
+.ceredetail-one > .cere-one-con {
+  padding: 20px 0;
+}
+.ceredetail-one > .cere-one-con > p {
+  color: #949494;
+  margin-bottom: 15px;
+}
+.ceredetail-one > .cere-one-share {
+  margin-top: 25px;
+  padding: 15px 0;
+  border-top: 1px dashed #ddd;
+  font-size: 0;
+}
+.ceredetail-one > .cere-one-share > a {
+  width: 165px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  background-color: #F6F6F6;
+  display: inline-block;
+  margin-right: 12px;
+  color: #7b001f;
+  font-size: 16px;
+}
+.ceredetail-one > .cere-one-share > a:last-child {
+  margin-right: 0;
+}
+.ceredetail-one > .cere-one-share > a > img {
+  margin-right: 10px;
+}
+
+.ceredetail-two > .cere-two-head {
+  border-left: 5px solid #7B001F;
+  line-height: 48px;
+  padding-left: 20px;
+  color: #7b001f;
+}
+.ceredetail-two > .cere-two-con {
+  padding: 25px;
+  border-top: 1px solid #ddd;
+}
+.ceredetail-two > .cere-two-con .cere-two-textarea {
+  width: 100%;
+  resize: none;
+  height: 150px;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.ceredetail-two > .cere-two-con .cere-two-sub {
+  margin-top: 25px;
+  background-color: #DD5A5A;
+  width: 137px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.ceredetail-three > .cere-three-head {
+  border-left: 5px solid #7B001F;
+  line-height: 48px;
+  padding-left: 20px;
+  color: #7b001f;
+}
+.ceredetail-three > .cere-three-con {
+  padding: 0 25px;
+  border-top: 1px solid #ddd;
+}
+
+.cere-three-con ul li {
+  padding: 25px 0;
+  border-bottom: 1px dashed #ddd;
+}
+.cere-three-con ul li:last-child {
+  border-bottom: 0;
+}
+.cere-three-con ul li > ul {
+  padding: 0 25px;
+}
+.cere-three-con ul li > ul li {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.cere-three-con ul li > p {
+  color: #aeaeae;
+}
+.cere-three-con ul li > p.cere-three-name {
+  color: #a1a1a1;
+  font-size: 16px;
+}
+.cere-three-con ul li > p.cere-three-con {
+  padding: 3px 0;
+}
+.cere-three-con ul li > p.cere-three-time span {
+  margin-right: 20px;
+  font-size: 12px;
+}
+.cere-three-con ul li > p.cere-three-time span:last-child {
+  cursor: pointer;
+  color: #7b001f;
+}
+.cere-three-con ul li > p.cere-three-time span:last-child:hover {
+  text-decoration: underline;
+}
+.cere-three-con ul li > p.cere-three-time img {
+  margin-right: 5px;
+  vertical-align: -2px;
+}
+
+.cere-three-reply {
+  position: fixed;
+  width: 570px;
+  height: 230px;
+  top: 50%;
+  left: 50%;
+  margin-top: -105px;
+  margin-left: -285px;
+  background-color: #eee;
+  z-index: 999;
+  display: none;
+}
+.cere-three-reply > .reply-head {
+  color: #7b001f;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+}
+.cere-three-reply > .reply-con {
+  padding: 10px 15px;
+}
+.cere-three-reply > .reply-con .reply-textarea {
+  width: 100%;
+  height: 120px;
+  resize: none;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.cere-three-reply > .reply-con .reply-btn {
+  width: 95px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  background-color: #F6F6F6;
+  margin-top: 10px;
+  border: 0;
+  color: #7b001f;
+  cursor: pointer;
+}
+.cere-three-reply > .reply-close {
+  position: absolute;
+  font-size: 80px;
+  right: -60px;
+  top: -40px;
+  cursor: pointer;
+}
+
+/****以茶会友详情样式结束****/
+/****支付成功开始****/
+.paysuccess {
+  margin-top: 50px;
+}
+.paysuccess > .w650 {
+  width: 650px;
+  margin: auto;
+}
+
+.pay-head > p {
+  color: #cc0000;
+}
+.pay-head > .pay-h-title {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+.pay-head > .pay-h-title > img {
+  margin-right: 10px;
+}
+.pay-head > .pay-h-a {
+  margin-top: 40px;
+}
+.pay-head > .pay-h-a > a {
+  color: #999;
+  margin-right: 40px;
+}
+.pay-head > .pay-h-a > a:hover {
+  color: #cc0000;
+  text-decoration: underline;
+}
+
+.pay-share {
+  margin-top: 125px;
+}
+.pay-share > .pay-s-title {
+  color: #cc0000;
+  font-size: 16px;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+.pay-share > .pay-s-con {
+  margin-top: 20px;
+}
+.pay-share > .pay-s-con > a {
+  display: block;
+  float: left;
+  width: 245px;
+  height: 60px;
+  line-height: 60px;
+  background-color: #F2F2F2;
+  margin-right: 35px;
+  margin-bottom: 20px;
+  color: #a1a1a1;
+  font-size: 18px;
+}
+
+.pay-s-con > a > img {
+  padding-left: 20px;
+}
+.pay-s-con > a > span {
+  padding: 0 20px;
+  color: #a1a1a1;
+  font-size: 18px;
+}
+
+/****支付成功结束****/
+/****会员中心开始****/
+.vipcon {
+  margin: auto;
+  width: 1180px;
+  min-height: 900px;
+  margin-top: 35px;
+  position: relative;
+}
+.vipcon > .vipcon-left {
+  background-color: #f2f2f2;
+  width: 200px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: auto;
+  bottom: 0;
+}
+.vipcon > .vipcon-right {
+  background-color: #fff;
+  width: 980px;
+  position: absolute;
+  left: auto;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  min-width: 980px;
+  padding: 25px 10px 10px 40px;
+}
+
+.vipcon-left > a {
+  display: block;
+  padding: 20px 25px;
+  color: #999;
+  font-size: 16px;
+}
+.vipcon-left > a > img {
+  padding-right: 25px;
+}
+.vipcon-left > a.active {
+  background-color: #fff;
+  color: #cc0000;
+}
+.vipcon-left > a:hover {
+  color: #cc0000;
+}
+
+.datum > .datum-head {
+  width: 100%;
+  position: relative;
+}
+.datum > .datum-head > div {
+  display: table-cell;
+  vertical-align: top;
+  width: 400px;
+}
+
+.datum-head > div > p {
+  margin-bottom: 10px;
+  color: #666;
+}
+.datum-head > div span {
+  color: #999;
+}
+.datum-head > .vipedit {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #999;
+}
+.datum-head > .vipedit:hover {
+  color: #cc0000;
+  text-decoration: underline;
+}
+
+.datum-address {
+  margin-top: 65px;
+}
+.datum-address > .datum-add-title {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+  color: #999;
+  margin-bottom: 15px;
+}
+.datum-address > ul > li {
+  width: 248px;
+  border: 1px solid #ddd;
+  padding: 15px 10px;
+  cursor: pointer;
+  position: relative;
+  float: left;
+  margin: 0 25px 25px 0;
+  height: 116px;
+}
+.datum-address > ul > li.active{
+  border: 1px solid #cc0000;
+}
+.datum-address > ul > li.active p{
+  color: #cc0000;
+}
+.datum-address > ul > li.datum-li-last {
+  border: 0;
+  text-align: center;
+  color: #a1a1a1;
+  padding: 0;
+}
+.datum-address > ul > li.datum-li-last a{
+  display: block;
+  color: #a1a1a1;
+  height: 100%;
+  line-height: 112px;
+  border: 1px dashed #ddd;
+}
+.datum-address > ul > li.datum-li-last a:hover {
+  border: 1px dashed #cc0000;
+  color: #cc0000;
+}
+.datum-address > ul > li > p {
+  color: #a1a1a1;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.datum-address > ul > li > p:first-child {
+  font-size: 16px;
+  margin-top: 0;
+}
+.datum-address > ul > li > .datum-add-gb {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #999;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  right: 0;
+  height: 30px;
+  line-height: 30px;
+  z-index: 3;
+  text-align: right;
+  display: none;
+}
+.datum-address > ul > li > .datum-add-gba {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  line-height: 30px;
+  z-index: 4;
+  text-align: right;
+  display: none;
+}
+.datum-address > ul > li > .datum-add-gba > a {
+  color: #fff;
+  padding: 0 5px;
+  opacity: 1;
+}
+.datum-address > ul > li > .datum-add-gba > a:hover {
+  color: #cc0000;
+  text-decoration: underline;
+}
+.datum-address > ul > li:hover .datum-add-gb, .datum-address > ul > li:hover .datum-add-gba {
+  display: block;
+}
+
+.datum-edit {
+  width: 280px;
+  /*height: 500px;*/
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -140px;
+  background-color: #F6F6F6;
+  z-index: 999;
+  display: none;
+}
+.datum-edit > .datum-edit-close {
+  position: absolute;
+  top: -40px;
+  right: -60px;
+  font-size: 80px;
+  cursor: pointer;
+}
+.datum-edit .datum-edit-title {
+  text-align: center;
+  line-height: 45px;
+  height: 45px;
+  background-color: #F2F2F2;
+  color: #868686;
+}
+.datum-edit .datum-edit-con {
+  padding: 20px;
+}
+.datum-edit .datum-edit-con input {
+  width: 100%;
+}
+.datum-edit .datum-edit-con input.datum-text {
+  border: 1px solid #ddd;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 10px;
+  padding-left: 8px;
+}
+.datum-edit .datum-edit-con input.datum-btn {
+  background-color: #D33131;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.datum-edit .datum-edit-con .datum-sex{
+  margin-bottom: 10px;
+}
+.datum-edit-con .datum-sex label{
+  cursor: pointer;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.datum-edit-con .datum-sex label input{
+  margin-right: 3px;
+  width: auto;
+}
+#datum-edit2, #datum-edit3 {
+  height: 260px;
+  margin-top: -130px;
+}
+
+.addaddress .addaddree-head{
+  margin-bottom: 20px;
+  color: #999;
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+  position: relative;
+}
+.addaddress .addaddree-head .addaddree-head-a{
+ position: absolute;
+  right: 8px;
+  top: 8px;
+  color: #999;
+}
+.addaddress .addaddree-head .addaddree-head-a:hover{
+  color: #cc0000;
+  text-decoration: underline;
+}
+.addaddress-con{
+  color: #999;
+  padding: 15px 20px;
+}
+.addaddress-con .form-group label.control-label{
+  width: 80px;
+  display: inline-block;
+  text-align: right;
+}
+.addaddress-con .form-group input{
+   width: 600px;
+  height: 35px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding-left: 8px;
+}
+.addaddress-con .form-group .help-block{
+  margin-top: 10px;
+  margin-left: 80px;
+}
+.addaddress-con .field-addaddressform-detailaddress label{
+  vertical-align: top;
+}
+.addaddress-con .field-addaddressform-detailaddress textarea{
+  width: 600px;
+  border: 1px solid #ddd;
+  padding: 8px;
+  resize: none;
+  height: 80px;
+  border-radius: 3px;
+}
+.addaddress-con .address-btn{
+  margin-left: 150px;
+  width: 150px;
+  height: 35px;
+  text-align: center;
+  background-color: #cc0000;
+  color: #fff;
+  line-height: 35px;
+  border: 0;
+  cursor: pointer;
+}
+.addaddress-con .form-group .address-check{
+  width: auto;
+  padding: 0;
+}
+.addaddress-con .form-grouplist > div{
+  width: 290px;
+  float: left;
+}
+.addaddress-con .form-grouplist > .address-list1,.addaddress-con .form-grouplist > .address-list2{
+  width: 200px;
+}
+.addaddress-con .form-grouplist > div select{
+  width: 190px;
+  border: 1px solid #ddd;
+  height: 35px;
+  padding-left: 8px;
+  color: #999;
+}
+
+.order > .order-head {
+  font-size: 0;
+  position: relative;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  height: 45px;
+}
+.order > .order-head > a {
+  display: inline-block;
+  width: 160px;
+  height: 35px;
+  text-align: center;
+  font-size: 14px;
+  color: #868686;
+}
+.order > .order-head > a:hover{
+  color: #cc0000;
+}
+.order > .order-head > a.active {
+  color: #cc0000;
+  border-bottom: 2px solid #cc0000;
+}
+.order > .order-head > .order-line {
+  position: absolute;
+  width: 160px;
+  height: 3px;
+  background-color: #cc0000;
+  bottom: -2px;
+  left: 0;
+}
+
+.order-con {
+  padding: 15px;
+}
+.order-con > ul > li {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.order-con-head {
+  background-color: #F6F6F6;
+  height: 36px;
+  line-height: 36px;
+  color: #aeaeae;
+  font-size: 12px;
+  padding: 0 10px;
+}
+.order-con-head .ord-number {
+  display: inline-block;
+  width: 230px;
+}
+.order-con-head .ord-number > b {
+  color: #868686;
+  font-weight: 400;
+}
+.order-con-head .ord-head-right {
+  float: right;
+}
+.order-con-head .ord-head-right > a {
+  margin-left: 10px;
+  color: #aeaeae;
+}
+.order-con-head .ord-head-right > a:hover {
+  color: #CC0000;
+  text-decoration: underline;
+}
+
+.order-sub-con {
+  background-color: #FAFAFA;
+}
+.order-sub-con > div {
+  display: table-cell;
+  vertical-align: top;
+  word-break: break-all;
+  word-wrap: break-word;
+  border-right: 1px solid #F5F1F1;
+  color: #949494;
+  padding: 15px 10px;
+  text-align: center;
+}
+.order-sub-con > div:last-child {
+  border-right: 0;
+}
+.order-sub-con > div:nth-of-type(1) {
+  width: 460px;
+  padding: 0;
+}
+.order-sub-con > div:nth-of-type(2) {
+  width: 100px;
+}
+.order-sub-con > div:nth-of-type(3) {
+  width: 100px;
+}
+.order-sub-con > div:nth-of-type(4) {
+  width: 100px;
+}
+.order-sub-con > div:nth-of-type(5) {
+  width: 140px;
+}
+.order-sub-con > .sub-con-details > .orderbtn-danger{
+  color: #d9534f;
+}
+.order-sub-con > .sub-con-details > .orderbtn-success{
+  color: #5cb85c;
+}
+.order-sub-con > .sub-con-details > .orderbtn-info{
+  color: #5bc0de;
+}
+.order-sub-con > .sub-con-details > a {
+  display: block;
+  color: #aeaeae;
+  margin-top: 10px;
+}
+.order-sub-con > .sub-con-details > a:hover {
+  color: #CC0000;
+  text-decoration: underline;
+}
+.order-sub-con > .sub-con-last > a {
+  display: block;
+  color: #aeaeae;
+}
+.order-sub-con > .sub-con-last > a:hover {
+  color: #CC0000;
+  text-decoration: underline;
+}
+.order-sub-con > .sub-con-last > a.againbuy {
+  width: 80px;
+  height: 24px;
+  border: 1px solid #ddd;
+  margin: 0 auto 6px auto;
+}
+.order-sub-con > .sub-con-last > a.againbuy:hover {
+  border: 1px solid #CC0000;
+  text-decoration: none;
+  color: #CC0000;
+}
+.order-sub-con > .sub-con-last > .p-status{
+  color: #aeaeae;
+}
+
+
+.sub-con-list > .sub-row {
+  border-bottom: 1px solid #F5F1F1;
+}
+.sub-con-list > .sub-row:last-child {
+  border-bottom: 0;
+}
+.sub-con-list > .sub-row > div {
+  display: table-cell;
+  vertical-align: top;
+  padding: 15px 10px;
+}
+.sub-con-list > .sub-row > div:nth-of-type(1) {
+  width: 80px;
+}
+.sub-con-list > .sub-row > div:nth-of-type(2) {
+  width: 200px;
+  text-align: left;
+}
+.sub-con-list > .sub-row > div:nth-of-type(3) {
+  width: 80px;
+}
+.sub-con-list > .sub-row > div:nth-of-type(4) {
+  width: 100px;
+}
+.sub-con-list > .sub-row > div .img-responsive {
+  width: 60px;
+  height: 46px;
+}
+
+/****我的订单--退货表单样式开始*******/
+.orderReturnForm{
+  margin-top: 50px;
+}
+.orderReturnForm textarea{
+  resize: none;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  height: 80px;
+  border-radius: 3px;
+}
+.orderReturnForm .orderReturn-btn{
+  background-color: #cc0000;
+  color: #fff;
+  width: 150px;
+  height: 35px;
+  border: 0;
+  text-align: center;
+  line-height: 35px;
+  margin-top: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.orderReturnForm .help-block{
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+/****我的订单--退货表单样式结束*******/
+
+.orderfin {
+  width: 282px;
+  /*height: 400px;*/
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: -141px 0 0 -200px;
+  background-color: #F6F6F6;
+  z-index: 999;
+  display: none;
+}
+.orderfin > .orderfin-close {
+  position: absolute;
+  top: -40px;
+  right: -60px;
+  font-size: 80px;
+  cursor: pointer;
+}
+.orderfin .orderfin-title {
+  text-align: center;
+  line-height: 45px;
+  height: 45px;
+  background-color: #F2F2F2;
+  color: #868686;
+}
+.orderfin .orderfin-con {
+  padding: 20px 15px;
+  color: #949494;
+}
+.orderfin .orderfin-con > p {
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.orderfin .orderfin-con > p.notice {
+  text-align: left;
+  font-size: 12px;
+  color: #CC0000;
+}
+.orderfin .orderfin-con > label {
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+.orderfin .orderfin-con > textarea {
+  width: 100%;
+  height: 60px;
+  resize: none;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.orderfin .orderfin-con > input {
+  width: 100%;
+}
+.orderfin .orderfin-con > input.fin-text {
+  border: 1px solid #ddd;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 15px;
+  padding-left: 8px;
+}
+.orderfin .orderfin-con > input.fin-btn {
+  background-color: #D33131;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+#orderfin2 {
+  height: 700px;
+  margin-top: -350px;
+}
+
+.sub-con {
+  margin-top: 30px;
+}
+.sub-con > .sub-title {
+  text-align: center;
+  color: #aeaeae;
+  font-size: 12px;
+  position: relative;
+  margin-bottom: 8px;
+}
+.sub-con > .sub-title:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  height: 1px;
+  width: 70px;
+  background-color: #ddd;
+}
+.sub-con > .sub-title:after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 0;
+  height: 1px;
+  width: 70px;
+  background-color: #ddd;
+}
+.sub-con > div {
+  border: 1px solid #ddd;
+  color: #a1a1a1;
+  font-size: 12px;
+  padding: 10px;
+  background-color: #fff;
+  cursor: pointer;
+  margin-bottom: 10px;
+  height: 95px;
+}
+.sub-con > div > p:first-child {
+  font-size: 16px;
+}
+.sub-con > div:hover {
+  border: 1px solid #CC0000;
+  color: #CC0000;
+}
+.sub-con > div.active {
+  border: 1px solid #CC0000;
+  color: #CC0000;
+}
+.sub-con > div.sub-last {
+  border: 1px dashed #ddd;
+  height: 95px;
+  text-align: center;
+  line-height: 73px;
+}
+.sub-con > div.sub-last:hover {
+  border: 1px dashed #CC0000;
+}
+
+/****会员中心结束****/
+/****我的购物车开始****/
+.shopping {
+  margin: 50px 50px 0;
+}
+.shopping > div {
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+.shopping .myshopping-title{
+  height: 65px;
+  padding: 8px 40px;
+}
+.shopping .myshopping-title > div{
+  float: left;
+}
+.shopping .myshopping-title .success-a{
+  color: #7abd54;
+  font-size: 30px;
+}
+.shopping .myshopping-title .success-a i{
+  margin-right: 10px;
+}
+.shopping .myshopping-title .success-b{
+  margin-left: 30px;
+  margin-top: 5px;
+  color: #a1a1a1;
+}
+.myshopping-title .success-b .balance-a{
+  display: inline-block;
+  width: 150px;
+  height: 35px;
+  background-color: #d73b3b;
+  color: #fff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 20px;
+}
+.myshopping-title .success-b .balance-b{
+  margin-left: 10px;
+  color: #005ea7;
+}
+.myshopping-title .success-b .balance-b:hover{
+  color: #cc0000;
+  text-decoration: underline;
+}
+.shopping-one > .shop-head {
+  padding: 0 15px;
+  border-bottom: 1px solid #ddd;
+  height: 55px;
+  line-height: 55px;
+}
+.shopping-one > .shop-head > div {
+  display: table-cell;
+  color: #a1a1a1;
+}
+.shopping-one > .shop-head > div:nth-of-type(1) {
+  width: 140px;
+}
+.shopping-one > .shop-head > div:nth-of-type(2) {
+  width: 265px;
+}
+.shopping-one > .shop-head > div:nth-of-type(3) {
+  width: 265px;
+}
+.shopping-one > .shop-head > div:nth-of-type(4) {
+  width: 180px;
+}
+.shopping-one > .shop-head > div:nth-of-type(5) {
+  width: 120px;
+}
+.shopping-one > .shop-head > div:nth-of-type(6) {
+  width: 80px;
+}
+
+.shop-table {
+  display: table;
+  width: 100%;
+  padding: 0 15px;
+}
+.shop-table > div {
+  display: table-row;
+}
+.shop-table > div > div {
+  display: table-cell;
+  border-bottom: 1px dashed #ddd;
+  padding: 15px 25px 15px 0;
+  color: #a1a1a1;
+  vertical-align: middle;
+}
+.shop-table > div > div:nth-of-type(1) {
+  width: 140px;
+}
+.shop-table > div > div:nth-of-type(2) {
+  width: 265px;
+}
+.shop-table > div > div:nth-of-type(3) {
+  width: 265px;
+}
+.shop-table > div > div:nth-of-type(4) {
+  width: 180px;
+}
+.shop-table > div > div:nth-of-type(5) {
+  width: 120px;
+}
+.shop-table > div > div:nth-of-type(6) {
+  width: 80px;
+}
+.shop-table > div > div.shop-img > .img-responsive {
+  height: 85px;
+}
+.shop-table > div > div.shop-number .number-text {
+  border: 1px solid #ddd;
+  width: 50px;
+  height: 23px;
+  line-height: 23px;
+  padding-left: 8px;
+  color: #a1a1a1;
+}
+.shop-table > div > div.shop-number .sh-nubtn{
+  width: 20px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  height: 23px;
+}
+.shop-table > div > div.shop-number > img {
+  cursor: pointer;
+}
+.shop-table > div > div.shop-number > img.cut {
+  margin-right: 5px;
+}
+.shop-table > div > div.shop-number > img.plus {
+  margin-left: 5px;
+}
+.shop-table > div > div.shop-total {
+  color: #cc0000;
+}
+.shop-table > div > div.shop-operate > img {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  vertical-align: -2px;
+}
+.shop-table > div:last-child > div {
+  border-bottom: 0;
+}
+.shop-table .shop-name > p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.shop-table .shop-name > .shop-name-table > div {
+  display: table-row;
+}
+.shop-table .shop-name > .shop-name-table > div > div {
+  display: table-cell;
+  width: 120px;
+  font-size: 12px;
+}
+.shop-table .shop-name > .shop-name-table > div > div > span {
+  letter-spacing: 12px;
+}
+.shopping .shop-goback{
+  padding: 10px;
+  text-align: right;
+  width: 100%;
+}
+.shopping .shop-goback a{
+   color: #a1a1a1;
+}
+.shopping .shop-goback a:hover{
+  color: #cc0000;
+}
+
+.shopping-two {
+  padding: 25px 15px 5px;
+}
+.shopping-two .shopp-address > div {
+  float: left;
+  border: 1px solid #ddd;
+  padding: 10px;
+  color: #a1a1a1;
+  width: 248px;
+  height: 114px;
+  margin: 0 18px 20px 0;
+  cursor: pointer;
+}
+.shopping-two .shopp-address > div:nth-of-type(4n) {
+  margin-right: 0;
+}
+.shopping-two .shopp-address > div.active {
+  color: #cc0000;
+  border: 1px solid #cc0000;
+}
+.shopping-two .shopp-address > div.shop-two-last {
+  text-align: center;
+  line-height: 92px;
+  border: 1px dashed #ddd;
+}
+.shopping-two .shopp-address > div.shop-two-last a{
+  display: block;
+  color: #a1a1a1;
+}
+.shopping-two .shopp-address > div > p {
+  margin-bottom: 6px;
+  font-size: 12px;
+}
+.shopping-two .shopp-address > div > p:nth-of-type(1) {
+  font-size: 16px;
+}
+.shopping-two .address-p-show{
+  margin-bottom: 20px;
+}
+.shopping-two .address-p-show span{
+  cursor: pointer;
+}
+.shopping-two .address-p-show span i{
+  margin-left: 5px;
+}
+.shopping-two .shopping-two-more{
+  display: none;
+}
+
+.shopping-three {
+  padding: 20px 15px;
+}
+.shopping-three > .shop-three-payment {
+  margin-top: 25px;
+  font-size: 0;
+  text-align: right;
+}
+.shopping-three > .shop-three-payment > a {
+  display: inline-block;
+  width: 180px;
+  height: 42px;
+  line-height: 42px;
+  background-color: #F2F2F2;
+  color: #a1a1a1;
+  font-size: 16px;
+  margin-left: 15px;
+  text-align: left;
+}
+.shopping-three > .shop-three-payment > a > img {
+  width: 25px;
+  height: 25px;
+  margin: 0 15px;
+}
+.shopping-three > .shop-three-payment > a.ordersubmit{
+  background-color: #cc0000;
+  color: #fff;
+  text-align: center;
+}
+
+.shop-three-list > div {
+  line-height: 30px;
+}
+.shop-three-list > div > div {
+  display: table-cell;
+  text-align: right;
+}
+.shop-three-list > div > div:first-child {
+  width: 920px;
+}
+.shop-three-list > div > div:last-child {
+  width: 130px;
+  color: #cc0000;
+}
+
+.myshopping-one > .shop-head > div:nth-of-type(1) {
+  width: 80px;
+}
+.myshopping-one > .shop-head > div:nth-of-type(2) {
+  width: 140px;
+}
+.myshopping-one > .shop-head > div:nth-of-type(3) {
+  width: 255px;
+}
+.myshopping-one > .shop-head > div:nth-of-type(4) {
+  width: 265px;
+}
+.myshopping-one > .shop-head > div:nth-of-type(5) {
+  width: 170px;
+}
+.myshopping-one > .shop-head > div:nth-of-type(6) {
+  width: 120px;
+}
+.myshopping-one > .shop-head > div:nth-of-type(7) {
+  width: 50px;
+}
+.myshopping-one > .shop-head label {
+  cursor: pointer;
+}
+.myshopping-one > .shop-head label input {
+  vertical-align: -1px;
+  margin-right: 3px;
+}
+
+.mysh-table > div > div {
+  padding-right: 20px;
+}
+.mysh-table > div > div:nth-of-type(1) {
+  width: 80px;
+}
+.mysh-table > div > div:nth-of-type(2) {
+  width: 140px;
+}
+.mysh-table > div > div:nth-of-type(3) {
+  width: 255px;
+}
+.mysh-table > div > div:nth-of-type(4) {
+  width: 265px;
+}
+.mysh-table > div > div:nth-of-type(5) {
+  width: 170px;
+}
+.mysh-table > div > div:nth-of-type(6) {
+  width: 120px;
+}
+.mysh-table > div > div:nth-of-type(7) {
+  width: 50px;
+}
+
+.myshopping-twq {
+  padding: 0 15px;
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+}
+.myshopping-twq > .continue {
+  color: #a1a1a1;
+  font-size: 16px;
+}
+.myshopping-twq > .continue:hover {
+  color: #CC0000;
+  text-decoration: underline;
+}
+.myshopping-twq > .total {
+  color: #CC0000;
+  position: absolute;
+  right: 220px;
+}
+.myshopping-twq > .total > b {
+  font-weight: 500;
+  font-size: 20px;
+}
+.myshopping-twq > .balance {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: inline-block;
+  width: 205px;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+  background-color: #D53333;
+}
+
+.shopped {
+  margin-top: 70px;
+}
+.shopped > .shopped-head {
+  color: #bcbcbc;
+  font-size: 28px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+.shopped > .shopped-head:before, .shopped > .shopped-head:after {
+  content: "";
+  position: absolute;
+  width: 410px;
+  height: 1px;
+  background-color: #ddd;
+  left: 0;
+  top: 22px;
+}
+.shopped > .shopped-head:after {
+  left: auto;
+  right: 0;
+}
+
+.shopped-ul {
+  margin: 0 50px;
+}
+.shopped-ul > li {
+  float: left;
+  text-align: center;
+  background-color: #fff;
+  width: 208px;
+  height: 260px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding: 38px 0;
+}
+.shopped-ul > li:nth-of-type(5) {
+  margin-right: 0;
+}
+.shopped-ul > li > .shopped-img {
+  width: 110px;
+  height: 70px;
+}
+.shopped-ul > li > p {
+  color: #a1a1a1;
+}
+.shopped-ul > li > p.shopped-name {
+  font-size: 16px;
+  margin-top: 15px;
+}
+.shopped-ul > li > p.shopped-money {
+  margin: 15px 0;
+  color: #CC0000;
+}
+
+/****我的购物车结束****/
+/****茶叶详情开始****/
+.teaDet {
+  padding: 25px 0;
+}
+.teaDet > .teaDet-share {
+  text-align: right;
+  color: #666;
+}
+.teaDet > .teaDet-share > a {
+  margin-left: 5px;
+}
+.teaDet > .teaDet-share > a > img {
+  width: 20px;
+  height: 20px;
+}
+.teaDet > .teaDet-con {
+  padding: 50px 0;
+}
+
+.teaDet-con > div {
+  display: table-cell;
+  vertical-align: top;
+}
+.teaDet-con > .teaDet-con-right {
+  padding-left: 60px;
+}
+
+.teaDet-con-left{
+  position: relative;
+  width: 520px;
+}
+div.zoomDiv {
+  z-index:999;
+  position:absolute;
+  top:0;
+  left:0;
+  width:520px;
+  height:360px;
+  background:#fff;
+  border:1px solid #CCC;
+  text-align:center;
+  overflow:hidden;
+}
+div.zoomMask {
+  position:absolute;
+  background:url("../img/mask.png") repeat scroll 0 0 transparent;
+  cursor:move;
+  z-index:1;
+}
+.teaDet-con-left > .bigimg {
+  width: 520px;
+  height: 360px;
+}
+.teaDet-con-left > .bigimg > img {
+  height: 100%;
+}
+.teaDet-con-left > .smallimg {
+  margin-top: 25px;
+  position: relative;
+  height: 100px;
+}
+.smallimg > .smallimg-div{
+  position: relative;
+  overflow: hidden;
+  width: 480px;
+  height: 100px;
+  margin: auto;
+}
+.smallimg-div .smallimg-ul{
+  overflow: hidden;
+  position: relative;
+}
+.smallimg-div .smallimg-ul li{
+  float: left;
+  margin: 0 10px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+.smallimg-div .smallimg-ul li.active{
+  border: 1px solid #cc0000;
+}
+.smallimg-div .smallimg-ul li img{
+  width: 88px;
+  height: 88px;
+}
+.smallimg ol li{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100px;
+  width: 20px;
+  font-size: 26px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #ccc;
+  line-height: 90px;
+  color: #fff;
+}
+.smallimg ol li.next{
+  right: 0;
+  left: auto;
+}
+
+.teaDet-con-right > .teaDet-right-name {
+  font-size: 34px;
+  color: #333;
+  font-weight: 400;
+}
+.teaDet-con-right > .teaDet-list {
+  margin-top: 20px;
+}
+.teaDet-con-right > .teaDet-list > div > div {
+  display: table-cell;
+  vertical-align: top;
+}
+.teaDet-con-right > .teaDet-list .teaDet-list-name {
+  width: 60px;
+  padding-top: 5px;
+}
+.teaDet-con-right > .teaDet-list .teaDet-list-name > b {
+  font-weight: 400;
+  letter-spacing: 14px;
+}
+.teaDet-con-right > .teaDet-list .teaDet-list-con > span {
+  display: block;
+  width: 120px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #ddd;
+  color: #868686;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  float: left;
+}
+.teaDet-con-right > .teaDet-list .teaDet-list-con > span:nth-of-type(4n) {
+  margin-right: 0;
+}
+.teaDet-con-right > .teaDet-list .teaDet-list-con > span:hover {
+  color: #cc0000;
+}
+.teaDet-con-right > .teaDet-list .teaDet-list-con > span.active {
+  color: #cc0000;
+  border: 1px solid #cc0000;
+}
+.teaDet-con-right > .teaDet-list > .teaDet-right-price {
+  color: #cc0000;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.teaDet-con-right > .teaDet-list > .teaDet-right-price > .teaDet-list-con {
+  font-size: 18px;
+}
+.teaDet-con-right > .teaDet-list > .teaDet-right-number .teaDet-list-name {
+  padding-top: 15px;
+}
+.teaDet-con-right > .teaDet-list > .teaDet-right-number .teaDet-list-con > span {
+  line-height: 20px;
+  padding: 6px 0;
+}
+.teaDet-con-right > .teaDet-list > .teaDet-right-number .teaDet-list-con > span b{
+  font-weight: 500;
+}
+.teaDet-con-right > .teaDet-list > .teaDet-right-number .teaDet-list-con > .last-span {
+  cursor: auto;
+  height: 53px;
+  line-height: 33px;
+}
+.teaDet-con-right > .teaDet-list > .teaDet-right-number .teaDet-list-con > .last-span > .teaDet-text {
+  width: 40px;
+  height: 20px;
+  padding-left: 5px;
+  border: 1px solid #ddd;
+}
+.teaDet-con-right > .teaDet-list > .teaDet-right-number .teaDet-list-con > .last-span > input[type='button'] {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #ddd;
+  line-height: 20px;
+}
+.teaDet-con-right > .teaDet-list > .teaDet-right-number .teaDet-list-con > .last-span > .teaDet-price{
+  font-size: 14px;
+}
+
+.teaDet-bottom {
+  background-color: #F2F2F2;
+  line-height: 80px;
+  text-align: right;
+  color: #cc0000;
+}
+.teaDet-bottom > span {
+  font-size: 28px;
+}
+.teaDet-bottom > a {
+  display: inline-block;
+  width: 150px;
+  height: 46px;
+  background-color: #D73B3B;
+  text-align: center;
+  line-height: 46px;
+  color: #fff;
+  font-size: 18px;
+  margin: 0 20px 0 100px;
+}
+.teaDet-bottom > a i{
+  margin-right: 10px;
+}
+.teaDet-bottom .teaDet-bottom-left{
+  font-size: 14px;
+  display: inline-block;
+  width: 720px;
+  float: left;
+}
+.teaDet-bottom .teaDet-bottom-center{
+  float: left;
+  margin-left: 15px;
+}
+
+/*.teadetails > .container, .teadetails > .section-foot {*/
+  /*padding: 88px 0;*/
+/*}*/
+.teadetails > .container .page-txt, .teadetails > .section-foot .page-txt {
+  color: #a1a1a1;
+  line-height: 26px;
+  text-indent: 2em;
+}
+
+.section-foot {
+  position: relative;
+}
+.section-foot .footer {
+  position: absolute;
+  bottom: 0;
+}
+.teadetails-con > .section{
+  padding: 50px 0;
+}
+.teadetails-con > .section > .page-txt{
+  color: #a1a1a1;
+  line-height: 26px;
+  text-indent: 2em;
+}
+.teadetails-conHead{
+  line-height: 40px;
+  font-size: 0;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+.teadetails-conHead a{
+  display: inline-block;
+  color: #a1a1a1;
+  font-size: 14px;
+  width: 160px;
+  text-align: center;
+}
+.teadetails-conHead a.active{
+  color: #cc0000;
+}
+.teadetails-conHead .teadeta-line{
+  height: 2px;
+  width: 160px;
+  background-color: #cc0000;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.teadetailsrate-ul{
+  padding: 20px;
+}
+.teadetailsrate-ul > li{
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  padding: 15px;
+}
+.teadetailsrate-ul > li > div{
+  display: table-cell;
+  vertical-align: middle;
+  color: #bcbcbc;
+}
+.teadetailsrate-ul > li > div.teade-lileft{
+  width: 690px;
+  padding-right: 30px;
+}
+.teadetailsrate-ul > li > div.teade-lileft p.bq{
+  margin: 10px 0;
+}
+.teadetailsrate-ul > li > div.teade-lileft .teade-comcon{
+  color: #8C8B8B;
+  padding-bottom: 10px;
+}
+.teadetailsrate-ul > li .bq span{
+  display: inline-block;
+  width: 80px;
+  height: 24px;
+  background-color:#E7E6E6;
+  text-align: center;
+  line-height: 24px;
+  margin-right: 10px;
+}
+.teadetailsrate-ul > li > div.teade-lileft p:nth-of-type(3){
+  font-size: 12px;
+  color: #c9c9c9;
+}
+.teadetailsrate-ul > li > div.teade-licenter{
+  width: 250px;
+}
+.teadetailsrate-ul > li > div.teade-licenter i{
+  font-size: 16px;
+  color: #ea8010;
+  margin-right: 5px;
+}
+.teadetailsrate-ul > li > div.teade-liright{
+  text-align: center;
+}
+.teadetailsrate-ul > li > div.teade-liright .time{
+  font-size: 12px;
+}
+.teadetails-coned{
+  position: relative;
+  padding-bottom: 100px;
+}
+.adminpage{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -300px;
+}
+.adminpage > li{
+  float: left;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+  margin-right: 8px;
+}
+.adminpage li a{
+  color: #cc0000;
+}
+.adminpage li.active{
+  background-color: #cc0000;
+}
+.adminpage li.active a{
+  color: #fff;
+}
+.adminpage > .adminpage-prev{
+  margin-right: 22px;
+}
+.adminpage > .adminpage-next{
+  margin-left: 22px;
+}
+.adminpage > .adminpage-search{
+  margin-left: 37px;
+  width: 120px;
+}
+.adminpage-search input{
+  width: 60px;
+  padding-left: 8px;
+  height: 32px;
+  line-height: 30px;
+  border: 1px solid #ddd;
+  vertical-align: top;
+}
+.adminpage .adminpage-search a{
+  background-color: #CC0000;
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  color: #fff;
+  width: 40px;
+  margin-left: 10px;
+}
+/****茶叶详情结束****/
+/****订单详情开始****/
+.myorder {
+  padding: 0 30px;
+}
+.myorder > div {
+  background-color: #fff;
+}
+.myorder > .myorder-head {
+  background-color: #f9f9f9;
+}
+
+.myorder-head {
+  height: 60px;
+  line-height: 60px;
+  color: #aeaeae;
+  font-size: 12px;
+}
+.myorder-head span {
+  margin: 0 5px;
+}
+.myorder-head a {
+  color: #aeaeae;
+}
+.myorder-head a:hover {
+  color: #CC0000;
+  text-decoration: underline;
+}
+.myorder-head > .myorder-head-r {
+  float: right;
+}
+.myorder-head > .myorder-head-r > a {
+  margin-left: 15px;
+}
+
+.myorder-practice {
+  padding: 30px 50px;
+  margin-bottom: 10px;
+}
+.myorder-practice > div {
+  float: left;
+  position: relative;
+  width: 235px;
+  text-align: center;
+  color: #d7d7d7;
+}
+.myorder-practice > div:before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  background-color: #E4E4E4;
+  top: 0;
+  left: 20px;
+}
+.myorder-practice > div:after {
+  content: url(../img/wxjt.png);
+  position: absolute;
+  top: -2px;
+  left: 45px;
+}
+.myorder-practice > div:last-child {
+  width: 80px;
+}
+.myorder-practice > div:last-child:after {
+  content: "";
+}
+.myorder-practice > div:last-child > div {
+  margin-left: -20px;
+}
+.myorder-practice > div > div {
+  margin-left: -175px;
+  margin-top: 30px;
+}
+.myorder-practice > div a {
+  color: #aeaeae;
+}
+.myorder-practice > div a:hover {
+  color: #CC0000;
+  text-decoration: underline;
+}
+.myorder-practice > div.finish {
+  color: #009966;
+}
+.myorder-practice > div.finish:before {
+  background-color: #009966;
+}
+.myorder-practice > div.finish:after {
+  content: url(../img/yxjt.png);
+}
+.myorder-practice > div.finish p:nth-of-type(2), .myorder-practice > div.finish p:nth-of-type(3) {
+  font-size: 12px;
+}
+.myorder-practice > div.finish:last-child:after {
+  content: "";
+}
+.myorder-practice > div.next {
+  color: #CC0000;
+}
+.myorder-practice > div.next:before {
+  background-color: #CC0000;
+}
+
+.myorder-handle {
+  padding: 20px 15px;
+  margin-bottom: 35px;
+}
+.myorder-handle > .myorder-handle-h {
+  border-bottom: 1px solid #f5f1f1;
+  padding-bottom: 5px;
+}
+.myorder-handle > .myorder-handle-h > div {
+  display: table-cell;
+  vertical-align: top;
+  color: #a1a1a1;
+}
+.myorder-handle > .myorder-handle-h > div:nth-of-type(1) {
+  width: 210px;
+}
+.myorder-handle > .myorder-handle-h > div:nth-of-type(2) {
+  width: 725px;
+}
+.myorder-handle > .myorder-handle-h > div:nth-of-type(3) {
+  width: 155px;
+}
+.myorder-handle > .myorder-handle-c > div {
+  padding-top: 10px;
+}
+.myorder-handle > .myorder-handle-c > div > div {
+  display: table-cell;
+  vertical-align: middle;
+  color: #a1a1a1;
+  font-size: 12px;
+}
+.myorder-handle > .myorder-handle-c > div > div:nth-of-type(1) {
+  width: 210px;
+}
+.myorder-handle > .myorder-handle-c > div > div:nth-of-type(2) {
+  width: 725px;
+}
+.myorder-handle > .myorder-handle-c > div > div:nth-of-type(3) {
+  width: 155px;
+}
+.myorder-handle > .myorder-handle-c > div.handle-express {
+  color: #a1a1a1;
+  margin-top: 10px;
+}
+.myorder-handle > .myorder-handle-c > div.handle-express > span {
+  margin-right: 25px;
+}
+
+.myorder-table {
+  margin-bottom: 10px;
+}
+.myorder-table table {
+  width: 100%;
+}
+.myorder-table table td {
+  text-align: center;
+  color: #a1a1a1;
+  height: 35px;
+  border-left: 1px solid #f5f1f1;
+  border-top: 1px solid #f5f1f1;
+  word-break:break-all;
+  word-wrap:break-word;
+  width: 200px;
+}
+.myorder-table table td:last-child {
+  border-right: 1px solid #f5f1f1;
+}
+.myorder-table table tr:last-child td {
+  border-bottom: 1px solid #f5f1f1;
+}
+.myorder-table .order-name {
+  width: 80px;
+}
+
+.myorder-list > .shop-head {
+  padding: 0 15px;
+  border-bottom: 1px solid #ddd;
+  height: 55px;
+  line-height: 55px;
+}
+
+.myorder-list > .shop-head > div {
+  display: table-cell;
+  color: #a1a1a1;
+}
+
+.myorder-list > .shop-head > div:nth-of-type(1) {
+  width: 200px;
+}
+.myorder-list > .shop-head > div:nth-of-type(2) {
+  width: 340px;
+}
+.myorder-list > .shop-head > div:nth-of-type(3) {
+  width: 350px;
+}
+.myorder-list > .shop-head > div:nth-of-type(4) {
+  width: 120px;
+}
+.myorder-list > .shop-head > div:nth-of-type(5) {
+  width: 150px;
+}
+
+.myorder-list > .myshop-table {
+  display: table;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.myshop-table > div {
+  display: table-row;
+}
+
+.myshop-table > div > div {
+  display: table-cell;
+  border-bottom: 1px dashed #ddd;
+  padding: 15px 25px 15px 0;
+  color: #a1a1a1;
+  vertical-align: middle;
+}
+.myshop-table > div > div:nth-of-type(1) {
+  width: 200px;
+}
+.myshop-table > div > div:nth-of-type(2) {
+  width: 340px;
+}
+.myshop-table > div > div:nth-of-type(3) {
+  width: 350px;
+}
+.myshop-table > div > div:nth-of-type(4) {
+  width: 120px;
+}
+.myshop-table > div > div:nth-of-type(5) {
+  width: 150px;
+}
+.myshop-table > div > div.shop-img > .img-responsive {
+  height: 70px;
+  width: 110px;
+}
+.myshop-table > div > div.shop-number > .number-text {
+  border: 1px solid #ddd;
+  width: 50px;
+  height: 23px;
+  line-height: 23px;
+  padding-left: 8px;
+  color: #a1a1a1;
+}
+.myshop-table > div > div.shop-total {
+  color: #cc0000;
+}
+.myshop-table > div > div.shop-name > p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.myshop-table > div:last-child > div {
+  border-bottom: 0;
+}
+
+.myshop-table .shop-name > .shop-name-table > div {
+  display: table-row;
+}
+.myshop-table .shop-name > .shop-name-table > div > div {
+  display: table-cell;
+  width: 140px;
+  font-size: 12px;
+}
+.myshop-table .shop-name > .shop-name-table > div > div > span {
+  letter-spacing: 12px;
+}
+
+/****订单详情结束****/
+/****评价晒单开始****/
+.evaluate {
+  width: 1120px;
+  margin: 40px auto;
+}
+.evaluate > .evaluate-title{
+   margin-bottom: 15px;
+   color: #aeaeae;
+}
+.evaluate > .evaluate-title a{
+  color: #aeaeae;
+}
+.evaluate > .evaluate-head {
+  padding: 15px 10px 5px;
+  border-bottom: 1px solid #ddd;
+  color: #aeaeae;
+  background-color: #fff;
+}
+.evaluate > .evaluate-head > div {
+  display: table-cell;
+  text-align: center;
+}
+.evaluate > .evaluate-head > div:nth-of-type(1) {
+  width: 610px;
+  text-align: left;
+  padding-left: 25px;
+}
+.evaluate > .evaluate-head > div:nth-of-type(2) {
+  width: 260px;
+}
+.evaluate > .evaluate-head > div:nth-of-type(3) {
+  width: 230px;
+}
+.evaluate > .evaluate-con {
+  padding: 10px;
+  background-color: #fff;
+}
+.evaluate > .evaluate-con > div {
+  border-bottom: 1px solid #F5F5F5;
+  padding: 20px 0;
+}
+.evaluate > .evaluate-con > div:last-child {
+  border-bottom: 0;
+}
+
+.evaluate-con > div > div {
+  display: table-cell;
+  color: #a1a1a1;
+  text-align: center;
+}
+.evaluate-con > div > div:nth-of-type(1) {
+  width: 610px;
+  text-align: left;
+  padding-left: 25px;
+}
+.evaluate-con > div > div:nth-of-type(2) {
+  width: 260px;
+}
+.evaluate-con > div > div:nth-of-type(3) {
+  width: 230px;
+}
+.evaluate-con > div > div.eva-img img {
+  width: 94px;
+  height: 60px;
+  margin-right: 15px;
+}
+.evaluate-con > div > div.eva-show {
+  display: block;
+  text-align: left;
+  margin: 25px 15px 0;
+  border: 1px solid #E7E6E6;
+  padding: 15px;
+  position: relative;
+}
+.evaluate-con > div > div.publish, .evaluate-con > div > div.see {
+  cursor: pointer;
+}
+
+.eva-show .triangle {
+  position: absolute;
+  border-style: solid;
+  border-color: transparent transparent #E7E6E6 transparent;
+  border-width: 20px;
+  width: 0;
+  height: 0;
+  top: -40px;
+  right: 80px;
+}
+.eva-show .triangleed {
+  border-color: transparent transparent #fff transparent;
+  top: -38px;
+  right: 80px;
+}
+.evaluate-con > div > div.publish-eva-show{
+  border: 1px solid #cc0000;
+}
+.publish-eva-show .triangle{
+  border-color: transparent transparent #cc0000 transparent;
+}
+.publish-eva-show .triangleed{
+  border-color: transparent transparent #fff transparent;
+}
+
+.eva-show .eva-con > div {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #aeaeae;
+}
+.eva-show .eva-con > div.help-block{
+  margin-left: 50px;
+  color: #cc0000;
+}
+.eva-show .eva-con > div > div {
+  display: table-cell;
+}
+.eva-show .eva-con > div > div:first-child {
+  width: 50px;
+}
+.eva-con > .score .score-span{
+  color: #ea8010;
+  font-size: 20px;
+  font-style: italic;
+}
+.score .score-i i{
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.see-eva-show .score .score-i i{
+  cursor: auto;
+}
+.score .score-i i.fa-star{
+  color: #ea8010;
+}
+.eva-show .eva-con > .score img {
+  width: 24px;
+  height: 24px;
+}
+.eva-show .eva-con > .mark span {
+  border: 1px solid #E5E5E5;
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+  height: 24px;
+  line-height: 22px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.eva-show .eva-con > .mark span:hover {
+  border: 1px solid #CC0000;
+  color: #CC0000;
+}
+.eva-show .eva-con > .idea > div {
+  vertical-align: top;
+}
+.eva-show .eva-con > .idea textarea {
+  resize: none;
+  border: 1px solid #ddd;
+  padding: 8px;
+  width: 800px;
+  height: 100px;
+}
+.eva-show .eva-con > .idea p {
+  margin-top: 10px;
+}
+.eva-show .eva-con > .idea p a {
+  width: 100px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+  background-color: #CC0000;
+  color: #fff;
+}
+.publishDiv{
+  background-color: #fff;
+  padding: 25px;
+}
+.publishDiv .publish{
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #aeaeae;
+}
+.publishDiv .eva-con > .score i{
+  margin-right: 5px;
+  cursor: pointer;
+}
+.publishDiv .eva-con > .score .icon-star{
+  color: #EA8010;
+}
+.publishDiv .eva-con > .score .score-span{
+  font-size: 20px;
+  color: #EA8010;
+  font-style: italic
+}
+.publishDiv .eva-show .eva-con > div {
+  font-size: 16px;
+}
+.publishDiv .eva-show .eva-con > div > div:first-child{
+  width: 50px;
+}
+.publishDiv .eva-show .eva-con > .idea p .publish-btn {
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #CC0000;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+.publishDiv .field-orderrevaluateform-score{
+  margin-left: 50px;
+}
+  /****评价晒单结束****/
+/****退货申请开始****/
+.orderreturn .return-sub-con > div:nth-of-type(2) {
+  width: 200px;
+}
+.orderreturn .return-sub-con > div:nth-of-type(3) {
+  width: 110px;
+}
+.orderreturn .return-sub-con > div:nth-of-type(4) {
+  width: 130px;
+}
+.orderreturn .return-sub-con > .account > p {
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+.orderreturn .return-sub-con > .account > p:first-child {
+  font-size: 14px;
+  color: #CC0000;
+  margin-bottom: 8px;
+}
+
+/****退货申请结束****/
+/****换货申请开始****/
+.return-sub-con .address > div {
+  margin-bottom: 8px;
+}
+.return-sub-con .address > div > div {
+  display: table-cell;
+}
+.return-sub-con .address > div > div:first-child {
+  width: 70px;
+}
+.return-sub-con .address > .address-one span {
+  letter-spacing: 7px;
+}
+.return-sub-con .address > .address-two span {
+  letter-spacing: 28px;
+}
+.return-sub-con .anew > p {
+  font-size: 12px;
+  text-align: left;
+}
+.return-sub-con .anew > p:first-child {
+  margin-top: 10px;
+}
+
+/****换货申请结束****/
+
+/***分页样式开始****/
+.orderPage{
+  margin: 35px auto;
+  overflow: hidden;
+  display: table;
+  text-align: center;
+}
+.orderPage li{
+  float: left;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #337ab7;
+  margin-left: -1px;
+}
+.orderPage li a,.orderPage li span{
+  color: #337ab7;
+  display: block;
+  padding: 6px 12px;
+}
+.orderPage li.first{
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  margin-left: 0;
+}
+.orderPage li.last{
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.orderPage li.active{
+  background-color: #337ab7;
+  color: #fff;
+  border-color: #337ab7;
+}
+.orderPage li.active a{
+  color: #fff;
+}
+.orderPage li:hover{
+  background-color: #eee;
+  color: #23527c;
+  border-color: #ddd;
+}
+.orderPage li.active:hover{
+  background-color: #337ab7;
+  color: #fff;
+  border-color: #337ab7;
+}
+/***分页样式结束****/
+
+/***错误页面开始****/
+.usererror{
+  min-height: 600px;
+  text-align: center;
+  padding-top: 200px;
+  font-size: 60px;
+  font-weight: bold;
+}
+.shopempty{
+  padding-top: 100px;
+  font-size: 36px;
+  min-height: 400px;
+  font-weight: 400;
+}
+.shopempty .shopempty-p i{
+  color: #cc0000;
+  margin-right: 20px;
+}
+/***错误页面结束****/
+
+/***生成订单页面开始****/
+.orderPayMent{
+  margin: 50px 50px 0;
+  min-height: 450px;
+}
+.orderPayMent-head{
+  color: #666;
+}
+.orderPayMent-head .orderpm-head-left{
+  float: left;
+}
+.orderPayMent-head .orderpm-head-right{
+  float: right;
+}
+.orderpm-head-left h4{
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.orderpm-head-left p{
+  font-size: 12px;
+}
+.orderpm-head-left p span{
+  color: #ff5d5b;
+}
+.orderpm-head-right span{
+  color: #ff5d5b;
+  font-size: 18px;
+  vertical-align: bottom;
+}
+.orderPayMent-con{
+  margin-top: 30px;
+  background-color: #fff;
+  padding: 15px;
+}
+.orderPayMent-con > a {
+  display: inline-block;
+  width: 180px;
+  height: 42px;
+  line-height: 42px;
+  background-color: #F2F2F2;
+  color: #a1a1a1;
+  font-size: 16px;
+  margin-left: 15px;
+  text-align: left;
+}
+.orderPayMent-con > a > img {
+  width: 25px;
+  height: 25px;
+  margin: 0 15px;
+}
+.orderPayMent-con .orderPayMent-btn{
+  border: 1px solid #ddd;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #fff;
+}
+.orderPayMent-con .orderPayMent-btn img{
+   height: 42px;
+  width: 170px;
+}
+/*.orderPayMent-con .orderPayMent-btn img{*/
+  /*margin: 5px 15px 0;*/
+  /*position: absolute;*/
+  /*left: 0;*/
+  /*z-index: 100;*/
+/*}*/
+/*.orderPayMent-con .orderPayMent-btn .orderPayMent-alipay{*/
+  /*border: 0;*/
+  /*background-color: #F2F2F2;*/
+  /*color: #333;*/
+  /*width: 180px;*/
+  /*height: 42px;*/
+  /*line-height: 42px;*/
+  /*cursor: pointer;*/
+  /*text-align: right;*/
+  /*padding-right: 15px;*/
+  /*font-size: 16px;*/
+  /*z-index: 999;*/
+/*}*/
+/***生成订单页面结束****/

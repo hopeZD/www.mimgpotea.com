@@ -1,0 +1,58 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Administrator
+ * Date: 2015/10/26
+ * Time: 11:35
+ * action：系统任务计划
+ */
+
+    namespace console\controllers;
+    use backend\models\OrderExpressInfo;
+    use console\models\SmsLog;
+    use yii\console\Controller;
+    use common\widgets\Tool;
+
+    /**
+     * 检查订单快递状态
+     * 每个小时检查一次 检查快递状态小于4的快递
+     * 更新快递进度信息和快递状态
+     */
+    class TaskController extends Controller
+    {
+        public function actionUpdateexpress(){
+            set_time_limit(0);
+            $model=new OrderExpressInfo();
+            $list=$model->find()->where(['<', 'status', 4])->orWhere(['status'=>null])->all();
+            if(!$list){
+                return false;
+            }
+
+            $res=[];
+            foreach($list as $k=>$v){
+                $code=null;
+                if(isset($v->express->code) && !empty($v->express->code)){
+                    $code=$v->express->code;
+                }
+                $expressNo=null;
+                if(isset($v->expressNo) && !empty($v->expressNo)){
+                    $expressNo=$v->expressNo;
+                }
+                if(!($code && $expressNo)){
+                    break;
+                }
+                $json= (Tool::getExpressInfoByOrder($code,$expressNo));
+                //数据有效
+                if( isset($json->data) && !empty($json->data)  && $json->data !='[]'){
+                    array_push($res,
+                        [
+                            'id'=>$v->id,
+                            'status'=>$json->status,
+                            'progressInfo'=>json_encode($json->data)
+                        ]);
+                }
+              sleep(2);
+            }
+            (new OrderExpressInfo())->updateOrderExpressInfo($res);
+        }
+    }

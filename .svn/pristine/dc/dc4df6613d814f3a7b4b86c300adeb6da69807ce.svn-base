@@ -1,0 +1,24 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Administrator
+ * Date: 2015/9/18
+ * Time: 11:07
+ */
+    namespace backend\controllers;
+    use yii\web\Controller;
+    use common\widgets\Tool;
+    use common\Widgets\Variable;
+    use app\models\AdminUser;
+class OrdermangerController extends Controller{
+    public function actionIndex()
+    {
+        $user=new AdminUser();
+        if(!$user->checkUserIsLogin()){
+            $this->redirect(Variable::$home_url);
+            return;
+        }
+        return $this->render(Variable::$orderManger_view);
+    }
+
+}

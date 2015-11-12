@@ -1,0 +1,12 @@
+<?php
+    namespace app\models;
+    use yii\db\ActiveRecord;
+    class User extends  ActiveRecord{
+        /*
+         * 查询用户列表
+         */
+        public  function  getUserList(){
+            $list=User::find()->orderBy('registerTime')->all();
+        }
+
+    }

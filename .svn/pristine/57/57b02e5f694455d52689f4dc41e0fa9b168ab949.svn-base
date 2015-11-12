@@ -1,0 +1,102 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Administrator
+ * Date: 2015/9/17
+ * Time: 17:38
+ */
+    namespace common\widgets;
+use yii\helpers\Html;
+
+class Tool{
+    /*获得当前IP
+     *
+     */
+    static function getIp()
+    {
+        if(getenv('HTTP_CLIENT_IP') && strcasecmp(getenv('HTTP_CLIENT_IP'), 'unknown'))
+        {
+            $onlineip = getenv('HTTP_CLIENT_IP');
+        }elseif(getenv('HTTP_X_FORWARDED_FOR') && strcasecmp(getenv('HTTP_X_FORWARDED_FOR'), 'unknown'))
+        {
+            $onlineip = getenv('HTTP_X_FORWARDED_FOR');
+        }elseif(getenv('REMOTE_ADDR') && strcasecmp(getenv('REMOTE_ADDR'), 'unknown'))
+        {
+            $onlineip = getenv('REMOTE_ADDR');
+        }elseif(isset($_SERVER['REMOTE_ADDR']) && $_SERVER['REMOTE_ADDR'] && strcasecmp($_SERVER['REMOTE_ADDR'], 'unknown'))
+        {
+            $onlineip = $_SERVER['REMOTE_ADDR'];
+        }
+        return $onlineip;
+    }
+    /*
+     *输出编码后的字符串
+     * @pram $string  需要输出的字符串
+     * @pram $default 当该$string为空时 输出的默认的字符串
+     */
+    public static function echoEncodeString($string,$default=''){
+        $string=$string ? $string:$default;
+        return Html::encode($string);
+    }
+    /*
+     *星号替换函数
+     * @pram $str 需要替换的字符串
+     * @pram $start 字符串的何处开始替换
+     * 　if(正数) => 在第 start 个偏移量开始替换
+     *   if(负数) => 在从字符串结尾的第 start 个偏移量开始替换
+     *   if(0) => 在字符串中的第一个字符处开始替换
+     * @pram length 规定要替换多少个字符。
+     *  if(正数) =>被替换的字符串长度，从左往右
+　　 *  if(负数) => 被替换的字符串长度，从右往左
+　　 *  if(0) => 如果start为正数，从start开始向左到最后
+     */
+    public static function replaceStringWithStar($str, $start, $length = 0){
+        $i = 0;
+        $star = '';
+        //在第 start 个偏移量开始替换
+        if($start >= 0) {
+            if($length > 0) {
+                $str_len = strlen($str);//获取字符串的长度
+                $count = $length;
+                if($start >= $str_len) {//当开始的下标大于字符串长度的时候，就不做替换了
+                    $count = 0;
+                }
+            }elseif($length < 0){
+                $str_len = strlen($str);//获取字符串的长度
+                $count = abs($length);//返回长度的绝对值
+                if($start >= $str_len) {//当开始的下标大于字符串长度的时候，由于是反向的，就从最后那个字符的下标开始
+                    $start = $str_len - 1;
+                }
+                $offset = $start - $count + 1;//起点下标减去数量，计算偏移量
+                $count = $offset >= 0 ? abs($length) : ($start + 1);//偏移量大于等于0说明没有超过最左边，小于0了说明超过了最左边，就用起点到最左边的长度
+                $start = $offset >= 0 ? $offset : 0;//从最左边或左边的某个位置开始
+            }else {
+                $str_len = strlen($str);
+                $count = $str_len - $start;//计算要替换的数量
+            }
+        }else {
+            if($length > 0) {
+                $offset = abs($start);
+                $count = $offset >= $length ? $length : $offset;//大于等于长度的时候 没有超出最右边
+            }elseif($length < 0){
+                $str_len = strlen($str);
+                $end = $str_len + $start;//计算偏移的结尾值
+                $offset = abs($start + $length) - 1;//计算偏移量，由于都是负数就加起来
+                $start = $str_len - $offset;//计算起点值
+                $start = $start >= 0 ? $start : 0;
+                $count = $end - $start + 1;
+            }else {
+                $str_len = strlen($str);
+                $count = $str_len + $start + 1;//计算需要偏移的长度
+                $start = 0;
+            }
+        }
+
+        while ($i < $count) {
+            $star .= '*';
+            $i++;
+        }
+
+        return substr_replace($str, $star, $start, $count);
+    }
+}

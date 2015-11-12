@@ -1,0 +1,10 @@
+<?php
+return [
+    'components' => [
+        'request' => [
+            'cookieValidationKey' => 'hYutPvWOW5s5ZEPIpddQH2_1QNE405oy',
+            'enableCsrfValidation' => false
+        ],
+],
+];
+

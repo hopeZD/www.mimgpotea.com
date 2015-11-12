@@ -1,0 +1,17 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Administrator
+ * Date: 2015/9/21
+ * Time: 16:46
+ */
+namespace backend\models;
+    use Yii;
+    use yii\base\Model;
+    use common\widgets\Tool;
+    use common\widgets\Variable;
+    use yii\db\ActiveRecord;
+
+    class ProductCategory extends ActiveRecord{
+
+    }

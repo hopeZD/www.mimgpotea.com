@@ -1,0 +1,86 @@
+
+		
+	<div class="container">
+		<div class="ceredetail">
+			<div class="ceredetail-one">
+				<h2 class="cere-one-title">日照名坡绿茶的那些事儿</h2>
+				<p class="cere-one-subtitle">
+					<span class="detail-time"><img src="/img/u24.png" />2015-03-12 09:23:12</span>
+					<span class="detail-name">哈啊哈哈哈哈哈哈哈哈</span>
+					<span class="detail-browse"><img src="/img/u28.png" />(1212)</span>
+					<span class="detail-comment"><img src="/img/u32.png" />(4521)</span>
+					<span class="detail-collection"><img src="/img/u36.png" />(12121)</span>
+				</p>
+				<div class="cere-one-con">
+					<p class="p-ll">日照绿茶产于山东省日照市。日照是世界茶学家公认的三大海绿茶城市之一（另两个分别为韩国宝城和日本静冈）。日照绿茶具有干茶墨绿，冲泡后汤色黄绿明亮、栗香浓郁、回味甘醇、叶片厚、香气高、耐冲泡等独特优良品质，被誉为“中国绿茶新贵”。2006年3月，国家质检总局批准对日照绿茶实施地理标志产品保护。</p>
+					<p class="p-ll">日照市自1966年“南茶北移”成功，现有茶园面积12万亩，年产茶叶1500吨，占山东省的50%以上，是山东省最大的绿茶生产基地，产量连续六年列全省第一，素称“北方第一茶”。其中岚山区巨峰镇1000亩有机茶已通过欧盟国际有机食品发展中心认证，获得了欧盟市场的“通行证”。</p>
+					<p class="p-img-center"><img src="/img/u20.jpg" /></p>
+					<p class="p-ll">1966年东港区的前身日照县“南茶北引”获得成功。此后东港茶叶不断发展，特别是自1998年以来，日照市政府立足实际科学决策，把绿茶生产确立为农业特色经济的支柱产业进行重点培植，致力建设“江北绿茶第一基地”，日照绿茶产业实现了跨越式发展。2012年，日照绿茶区域内茶园面积已达到12万亩，茶园面积占到全省的茶园面积半数以上，年产茶叶1500吨，占山东省的50%以上。是山东省最大的绿茶生产基地，产量连续六年列全省第一，素称“北方第一茶”。其中岚山区巨峰镇1000亩有机茶已通过欧盟国际有机食品发展中心认证，获得了欧盟市场的“通行证”。</p>
+				</div>
+				<div class="cere-one-share">
+					<a href=""><img src="/img/u45.png" />喜欢这篇文章</a>
+					<a href=""><img src="/img/fx1.png" />分享到朋友圈</a>
+					<a href=""><img src="/img/fx2.png" />告诉微信好友</a>
+					<a href=""><img src="/img/fx3.png" />分享到QQ空间</a>
+					<a href=""><img src="/img/fx4.png" />告诉QQ好友</a>
+					<a href=""><img src="/img/fx5.png" />分享到微博</a>
+				</div>
+			</div>
+			
+			<div class="ceredetail-two">
+				<div class="cere-two-head">我想说：</div>
+				<div class="cere-two-con">
+					<form>
+						<textarea class="cere-two-textarea"></textarea>
+						<input type="submit" class="cere-two-sub" value="发表" />
+					</form>
+				</div>
+			</div>
+			
+			<div class="ceredetail-three">
+				<div class="cere-three-head">其他人怎么看（125）：</div>
+				<div class="cere-three-con">
+					<ul>
+						<li>
+							<p class="cere-three-name">Maxcer 说：</p>
+							<p class="cere-three-con">也是，门槛也不低，是惯着用户一身毛病，而且我觉得外卖也不便宜，没事走几步还是可以的，而且现在很多地沟油问题。</p>
+							<p class="cere-three-time"><span><img src="/img/u24.png" />2015-03-21 06:12:12</span><span class="cere-three-span">回复</span></p>
+							<ul>
+								<li>
+									<p class="cere-three-name">Maxcer 说：</p>
+									<p class="cere-three-con">也是，门槛也不低，是惯着用户一身毛病，而且我觉得外卖也不便宜，没事走几步还是可以的，而且现在很多地沟油问题。</p>
+									<p class="cere-three-time"><span><img src="/img/u24.png" />2015-03-21 06:12:12</span><span class="cere-three-span">回复</span></p>
+								</li>
+								<li>
+									<p class="cere-three-name">Maxcer 说：</p>
+									<p class="cere-three-con">也是，门槛也不低，是惯着用户一身毛病，而且我觉得外卖也不便宜，没事走几步还是可以的，而且现在很多地沟油问题。</p>
+									<p class="cere-three-time"><span><img src="/img/u24.png" />2015-03-21 06:12:12</span><span class="cere-three-span">回复</span></p>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<p class="cere-three-name">Maxcer 说：</p>
+							<p class="cere-three-con">也是，门槛也不低，是惯着用户一身毛病，而且我觉得外卖也不便宜，没事走几步还是可以的，而且现在很多地沟油问题。</p>
+							<p class="cere-three-time"><span><img src="/img/u24.png" />2015-03-21 06:12:12</span><span class="cere-three-span">回复</span></p>
+						</li>
+						<li>
+							<p class="cere-three-name">Maxcer 说：</p>
+							<p class="cere-three-con">也是，门槛也不低，是惯着用户一身毛病，而且我觉得外卖也不便宜，没事走几步还是可以的，而且现在很多地沟油问题。</p>
+							<p class="cere-three-time"><span><img src="/img/u24.png" />2015-03-21 06:12:12</span><span class="cere-three-span">回复</span></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+			
+<div class="cere-three-reply">
+	<div class="reply-close">×</div>
+	<div class="reply-head">回复 Maxcer：</div>
+	<div class="reply-con">
+		<form>
+			<textarea class="reply-textarea"></textarea>
+			<input type="submit" value="回复" class="reply-btn" />
+		</form>
+	</div>
+</div>											

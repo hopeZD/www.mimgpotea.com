@@ -1,0 +1,41 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Administrator
+ * Date: 2015/9/18
+ * Time: 11:23
+ */
+namespace backend\controllers;
+use yii\web\Controller;
+use yii\web\Session;
+use app\models\AdminUser;
+use common\Widgets\Tool;
+use common\widgets\Variable;
+class ProductmangerController extends  Controller{
+    public function actionIndex()
+    {
+        $user=new AdminUser();
+        if(!$user->checkUserIsLogin()){
+            $this->redirect(Variable::$home_url);
+            return;
+        }
+        return $this->render(Variable::$productManger_view);
+    }
+    public function actionSeller(){
+        $user=new AdminUser();
+        if(!$user->checkUserIsLogin()){
+            $this->redirect(Variable::$home_url);
+            return;
+        }
+        return $this->render(Variable::$sellerManger_view);
+    }
+
+    public function actionProductcat(){
+        $user=new AdminUser();
+        if(!$user->checkUserIsLogin()){
+            $this->redirect(Variable::$home_url);
+            return;
+        }
+        return $this->render(Variable::$productCat_view);
+    }
+}

@@ -1,0 +1,19 @@
+<?php
+return [
+    'components' => [
+        'request' => [
+            'cookieValidationKey' => 'hYutPvWOW5s5ZEPIpddQH2_1QNE405oy',
+        ],
+        'db'=>array(
+            'class'=> 'yii\db\Connection',
+            'dsn' => 'mysql:host=192.168.2.6;dbname=mingpotea',
+
+            'username' => 'root',
+            'password' => '312461613',
+            'charset' => 'utf8',
+            'tablePrefix'=> 'mp_',
+
+        )
+    ],
+];
+

@@ -1,0 +1,327 @@
+.slideBox {
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+  position: relative;
+  min-width: 1180px !important;
+  padding: 100px 0;
+  background-color: #f9f9f9;
+}
+.slideBox > .bd {
+  position: relative;
+  height: 100%;
+  z-index: 0;
+}
+.slideBox > .bd > ul > li {
+  zoom: 1;
+  vertical-align: middle;
+}
+.slideBox > .prev, .slideBox > .next {
+  position: absolute;
+  left: 30px;
+  top: 235px;
+  display: block;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  font-size: 80px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  color: #00bb9c;
+}
+.slideBox > .prev:hover, .slideBox > .next:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.slideBox > .next {
+  left: auto;
+  right: 30px;
+}
+.slideBox > .hd {
+  height: 20px;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  bottom: 20px;
+  z-index: 1;
+}
+.slideBox > .hd > ul > li {
+  float: left;
+  margin: 0 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #e4e4e4;
+  cursor: pointer;
+}
+.slideBox > .hd > ul > li.on {
+  background-color: #c9c9c9;
+}
+
+.bd .container > .bd-li-left, .bd .container > .bd-li-right {
+  float: left;
+}
+.bd .container > .bd-li-left {
+  width: 435px;
+}
+.bd .container > .bd-li-left > img {
+  width: 100%;
+}
+.bd .container > .bd-li-right {
+  padding: 0 50px;
+  width: 600px;
+  position: relative;
+}
+.bd .container > .bd-li-right > .s-li-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 60px;
+}
+.bd .container > .bd-li-right > .s-li-text {
+  margin-top: 25px;
+  text-indent: 2em;
+  line-height: 26px;
+}
+.bd .container > .bd-li-right > .s-li-buy {
+  float: right;
+  margin-top: 35px;
+}
+.bd .container > .bd-li-right > .s-li-buy > .b-yh {
+  text-align: center;
+  color: #d44848;
+  margin-bottom: 8px;
+}
+.bd .container > .bd-li-right > .s-li-buy > .b-btn {
+  display: inline-block;
+  text-align: center;
+  width: 176px;
+  height: 54px;
+  line-height: 54px;
+  border: 2px solid #d44848;
+  color: #d44848;
+}
+
+.lineicon {
+  background-color: #f2f2f2;
+  width: 100%;
+  min-width: 1180px;
+  padding: 30px 0;
+}
+.lineicon .lineicon-row {
+  float: left;
+  text-align: center;
+  width: 236px;
+}
+.lineicon .lineicon-row > p {
+  padding-top: 10px;
+  color: #d44848;
+}
+
+.explain {
+  margin-top: 80px;
+}
+.explain > .explain-head {
+  text-align: center;
+}
+.explain > .explain-head > h2 {
+  font-size: 28px;
+  font-weight: 500;
+  color: #666;
+}
+.explain > .explain-head > p {
+  color: #989898;
+}
+.explain > .explain-con {
+  margin-top: 30px;
+}
+.explain > .allbtn {
+  text-align: center;
+  margin-top: 45px;
+}
+.explain > .allbtn > .allbtn-abtn {
+  color: #d44848;
+  border: 1px solid #d44848;
+  padding: 10px 30px;
+  display: inline-block;
+  width: 230px;
+}
+
+.explain-one > .ex-list {
+  float: left;
+  width: 380px;
+  height: 250px;
+  overflow: hidden;
+  margin-right: 20px;
+  position: relative;
+}
+.explain-one > .ex-list:last-child {
+  margin-right: 0;
+}
+.explain-one > .ex-list .img-responsive {
+  display: block;
+  height: 100%;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.explain-one > .ex-list .ex-text {
+  position: absolute;
+  font-size: 24px;
+  color: #fff;
+  line-height: 250px;
+  left: 0;
+  top: 0;
+  text-align: center;
+  width: 100%;
+}
+.explain-one > .ex-list > a:hover > .img-responsive {
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  transition: all 0.6s;
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.explain-two > .ex-two-left {
+  float: left;
+  width: 780px;
+  height: 440px;
+  overflow: hidden;
+  position: relative;
+}
+.explain-two > .ex-two-left .img-responsive {
+  display: block;
+  height: 100%;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.explain-two > .ex-two-left span {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-size: 30px;
+  color: #fff;
+}
+.explain-two > .ex-two-left > a:hover > .img-responsive {
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  transition: all 0.6s;
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.explain-two > .ex-two-right {
+  float: right;
+  width: 380px;
+}
+.explain-two > .ex-two-right > .ex-top {
+  position: relative;
+  height: 210px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.explain-two > .ex-two-right > .ex-top:last-child {
+  margin-bottom: 0;
+}
+.explain-two > .ex-two-right > .ex-top .img-responsive {
+  height: 100%;
+  display: block;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.explain-two > .ex-two-right > .ex-top span {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 18px;
+  color: #fff;
+}
+.explain-two > .ex-two-right > .ex-top > a:hover > .img-responsive {
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  transition: all 0.6s;
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.explain-three > div {
+  width: 580px;
+}
+.explain-three > div.ex-three-left {
+  float: left;
+}
+.explain-three > div.ex-three-right {
+  float: right;
+}
+.explain-three img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.explain-three a:hover > img {
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  transition: all 0.6s;
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.ex-three-left > .ex-th-top {
+  height: 310px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.ex-three-left > .ex-th-bottom > div {
+  float: left;
+  width: 180px;
+  height: 110px;
+  overflow: hidden;
+  margin-right: 20px;
+}
+.ex-three-left > .ex-th-bottom > div:last-child {
+  margin-right: 0;
+}
+
+.ex-three-right > div {
+  height: 210px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.ex-three-right > div:last-child {
+  margin-bottom: 0;
+}

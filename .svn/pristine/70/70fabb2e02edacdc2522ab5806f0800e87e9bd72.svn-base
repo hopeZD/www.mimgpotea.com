@@ -1,0 +1,35 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Administrator
+ * Date: 2015/9/17
+ * Time: 11:23
+ */
+    namespace app\models;
+        use yii\base\Model;
+
+        class AdminUserLoginForm extends Model
+    {
+        public $username;
+        public $password;
+        public $rememberMe=false;
+
+        private $_identity;
+
+        public function rules()
+        {
+            return array(
+                array('username, password', 'required'),
+                array('rememberMe', 'boolean'),
+                array('username', 'authenticate'),
+                array('password', 'authenticate'),
+            );
+        }
+
+        public function authenticate($attribute,$params)
+        {
+//            $this->_identity=new UserIdentity($this->username,$this->password);
+//            if(!$this->_identity->authenticate())
+//                $this->addError('password','错误的用户名或密码。');
+        }
+    }

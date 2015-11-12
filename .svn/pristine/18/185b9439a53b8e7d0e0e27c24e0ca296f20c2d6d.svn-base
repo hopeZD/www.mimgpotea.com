@@ -1,0 +1,27 @@
+<?php
+use yii\helpers\Html;
+use yii\widgets\ActiveForm;
+
+?>
+	
+	<div class="container">
+		<div class="login">
+			<div class="login-head">欢迎来到XXX，我们将竭诚为你服务。</div>
+			<div class="login-con">
+				<a href="" class="login-aicon"><img src="/img/fx2.png" />使用微信账号登录</a>
+				<a href="" class="login-aicon"><img src="/img/fx4.png" />使用QQ账号登录</a>
+				<a href="" class="login-aicon"><img src="/img/fx5.png" />使用微博账号登录</a>
+				<div class="divline">或</div>
+				<form action="/user/login" class="login-form" method="post">
+					<input type="hidden" value="<?php echo Yii::$app->getRequest()->getCsrfToken(); ?>" name="_csrf" />	
+					<input type="text" class="login-text" placeholder="手机/邮箱" name="username" />
+					<input type="password" class="login-paw" placeholder="密码" name="userpassword" />
+					<input type="submit" value="登录" class="login-btn" />
+				</form>
+				<a href="<?php echo \common\widgets\FVariable::$siteForgetpsw_url?>" class="login-forget">忘记密码？</a>
+				<div class="login-bottom">
+					还没有账号？<a href="<?php echo \common\widgets\FVariable::$siteRegister_url?>">注册</a>
+				</div>
+			</div>	
+		</div>
+	</div>																

@@ -1,0 +1,140 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Administrator
+ * Date: 2015/9/18
+ * Time: 17:53
+ */
+
+namespace frontend\controllers;
+use Yii;
+use common\models\LoginForm;
+use frontend\models\PasswordResetRequestForm;
+use frontend\models\ResetPasswordForm;
+use frontend\models\SignupForm;
+use frontend\models\ContactForm;
+use yii\base\InvalidParamException;
+use yii\web\BadRequestHttpException;
+use yii\web\Controller;
+use yii\filters\VerbFilter;
+use yii\filters\AccessControl;
+use common\Widgets\FVariable;
+
+class UserController extends Controller
+{
+    public  $layout='mingpoMain';//整个controller的布局文件
+
+    //用户个人中心---基本信息
+    public function actionVipcenter()
+    {
+        return $this->render(FVariable::$userVipcenter_view);
+    }
+
+    //用户个人中心---我的订单--待支付
+    public function actionViporder()
+    {
+        return $this->render(FVariable::$userViporder_view);
+    }
+
+    //用户个人中心---我的订单--待收货
+    public function actionViporderstay()
+    {
+        return $this->render(FVariable::$userViporderstay_view);
+    }
+
+    //用户个人中心---我的订单--已完成
+    public function actionViporderfinish()
+    {
+        return $this->render(FVariable::$userViporderfinish_view);
+    }
+
+    //用户个人中心---我的订单--评价晒单
+    public function actionOrderevaluate()
+    {
+        return $this->render(FVariable::$userOrderevaluate_view);
+    }
+
+    //用户个人中心---我的订单--已取消
+    public function actionVipordercancel()
+    {
+        return $this->render(FVariable::$userVipordercancel_view);
+    }
+
+    //用户个人中心---退货申请--退货中
+    public function actionVipreturn()
+    {
+        return $this->render(FVariable::$userVipreturn_view);
+    }
+
+    //用户个人中心---退货申请--已完成
+    public function actionVipreturnfinish()
+    {
+        return $this->render(FVariable::$userVipreturnfinish_view);
+    }
+
+    //用户个人中心---退货申请--已取消
+    public function actionVipreturncancel()
+    {
+        return $this->render(FVariable::$userVipreturncancel_view);
+    }
+
+    //用户个人中心---换货申请--换货中
+    public function actionVipbarter()
+    {
+        return $this->render(FVariable::$userVipbarter_view);
+    }
+
+    //用户个人中心---换货申请--已完成
+    public function actionVipbarterfinish()
+    {
+        return $this->render(FVariable::$userVipbarterfinish_view);
+    }
+
+    //用户个人中心---换货申请--已取消
+    public function actionVipbartercancel()
+    {
+        return $this->render(FVariable::$userVipbartercancel_view);
+    }
+
+    //我的购物车
+    public function actionMyshopping()
+    {
+        return $this->render(FVariable::$userMyshopping_view);
+    }
+
+    //我的购物车--结算
+    public function actionShoppingcart()
+    {
+        return $this->render(FVariable::$userShoppingcart_view);
+    }
+
+    //我的购物车--支付成功
+    public function actionPaysuccess()
+    {
+        return $this->render(FVariable::$userPaysuccess_view);
+    }
+
+    //我的订单详情--待支付
+    public function actionOrderpay()
+    {
+        return $this->render(FVariable::$userOrderpay_view);
+    }
+
+    //我的订单详情--待收货
+    public function actionOrderdelivery()
+    {
+        return $this->render(FVariable::$userOrderdelivery_view);
+    }
+
+    //我的订单详情--已完成--已评价
+    public function actionOrderfinish()
+    {
+        return $this->render(FVariable::$userOrderfinish_view);
+    }
+
+    //我的订单详情--已完成--未评价
+    public function actionOrderfinished()
+    {
+        return $this->render(FVariable::$userOrderfinished_view);
+    }
+}

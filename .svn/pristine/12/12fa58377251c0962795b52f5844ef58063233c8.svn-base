@@ -1,0 +1,298 @@
+.header{
+    background-color: #f2f2f2;
+    border-bottom: 2px solid #d74949;
+    width: 100%;
+    min-width: 1180px;
+    & > .container{
+        height: 86px;
+        line-height: 86px;
+        & > .nav-logo{
+           width: 155px;
+           float: left;
+        }
+        & > .nav-menu{
+            float: left;
+            margin-left: 130px;
+            width: 700px;
+            & > li{
+                & > a{
+                    display: block;
+                    float: left;
+                    padding: 0 20px;
+                    font-size: 16px;
+                    color: #a6a6a6;
+                    z-index: 3;
+                    &.active{
+                        background-color: #ebebeb;
+                        color: #d44848;
+                    }
+                    &:hover{
+                        color: #d44848;
+                    }                   
+                }
+                &.hot{
+                    & > a{
+                       position: relative; 
+                       & .header-hot{
+                           position: absolute;
+                           right: 0;
+                           top: 0;
+                           z-index: 2;
+                       }
+                    }                                        
+                }
+            }
+        }
+        & > .nav-vip{
+            float: right;
+            & > a{
+                color: #d44848;
+            }
+        }
+        & > .nav-name {
+            float: left;
+            margin-left: 45px;
+            & > a {
+                color: #cc0000;
+                display: block;
+                font-size: 32px;
+            }
+        }
+        & > .nav-userinfo {
+            float: right;
+            font-size: 12px;
+            & > a{
+                color: #999;
+                padding: 0 5px;
+                font-size: 12px;
+                &:hover{
+                    color: #cc0000;
+                }
+            }
+            & > span{
+                color: #999;
+            }
+        }
+        & > .nav-chat{
+            float: right;
+            margin-right: 20px;
+            & > a{
+                display: inline-block;
+                width: 160px;
+                height: 36px;
+                line-height: 34px;
+                border: 1px solid #cc0000;
+                color: #cc0000;
+                text-align: center;
+            }
+        }
+    }
+}
+.vipheader{
+    background-color: #f2f2f2;
+    border-bottom: 2px solid #d74949;
+    width: 100%;
+    min-width: 1180px;
+    height: 86px;
+    line-height: 86px;
+    padding: 0 25px;
+    & > .nav-logo{
+           width: 155px;
+           float: left;
+    }
+    & > .nav-name {
+            float: left;
+            margin-left: 45px;
+            & > a {
+                color: #cc0000;
+                display: block;
+                font-size: 32px;
+            }
+   }
+   & > .nav-userinfo {
+            float: right;
+            & > a{
+                color: #999;
+                padding: 0 5px;
+                &:hover{
+                    color: #cc0000;
+                }
+            }
+            & > span{
+                color: #999;
+            }
+   }
+}
+.footer{
+    background-color: #f2f2f2;
+    padding: 45px 0;
+    width: 100%;
+    min-width: 1180px;
+    margin-top: 100px;
+    & .linksbox{
+        & > ul{
+            float: left;
+        }
+    }
+}
+.linksbox{
+    & > ul{
+        &:first-child,&:last-child{
+            width: 350px;
+            text-align: center;           
+        }
+        &.link-two{
+            width: 480px;
+            text-align: center;
+            padding: 0 120px;
+            & > li{
+                float: left;
+                &:first-child{
+                    margin-right: 50px;
+                }
+            }
+            & p{
+                margin-top: 10px;
+                color: #999;
+            }
+        }
+        &:first-child{
+            text-align: left;
+            padding-left: 145px;
+            & > li{
+                margin-top: 12px;
+                &:first-child{
+                    font-size: 20px;
+                    color: #999;
+                    margin-top: 0;
+                }
+                & > a{
+                    color: #999;
+                }
+            }
+        }
+        &:last-child{
+            & > li{
+               color: #999;
+               &:nth-of-type(2){
+                   font-size: 18px;
+               }
+            }
+        }
+    }    
+}
+.copyright{
+    text-align: center;
+    clear: both;
+    margin-top: 55px;
+    & > p{
+        color: #999;
+        padding: 5px 0;
+    }
+}
+
+/******登录样式开始********/
+.login{
+    margin-top: 90px;
+    & > .login-head{
+        color: #999;
+        font-size: 28px;
+        text-align: center;
+    }
+    & > .login-con{
+        border: 1px solid #ddd;
+        width: 230px;
+        margin: 70px auto;
+        padding: 20px;
+    }
+}
+.login-con{
+    & > .login-aicon{
+        display: block;
+        color: #a1a1a1;
+        font-size: 16px;
+        background-color: #F2F2F2;
+        padding: 5px 0;
+        margin-bottom: 10px;
+        & > img{
+            vertical-align: middle;
+            padding: 0 10px;
+        }
+    }
+    & > .divline{
+        text-align: center;
+        color: #ccc;
+        position: relative;
+        &:before{
+            position: absolute;
+            height: 1px;
+            width: 80px;
+            background-color: #ddd;
+            top: 50%;
+            left: 0;
+            content: "";
+        }
+        &:after{
+            position: absolute;
+            height: 1px;
+            width: 80px;
+            background-color: #ddd;
+            top: 50%;
+            right: 0;
+            content: "";
+        }
+    }
+    & > .login-form{
+        margin-top: 10px;
+        & > input{
+            width: 100%;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            height: 35px;
+            line-height: 35px;
+            padding-left: 8px;
+            &.login-btn{
+                border: 0;
+                background-color: #DD5A5A;
+                color: #fff;
+                cursor: pointer;
+            }
+            &.login-yzm{
+                width: 100px;
+                float: left;
+            }
+        }
+        & > .login-obtain{
+            margin-left: 10px;
+            display: inline-block;
+            width: 78px;
+            background-color: #DD5A5A;
+            color: #fff;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+        }
+    }
+    & > .login-forget{
+        text-align: right;
+        display: block;
+        color: #aeaeae;
+        font-size: 12px;
+        &:hover{
+            color: #cc0000;
+            text-decoration: underline;
+        }
+    }
+    & > .login-bottom{
+        margin-top: 10px;
+        border-top: 1px solid #ddd;
+        padding-top: 10px;
+        color: #aeaeae;
+        font-size: 12px;
+        & > a{
+            color: #cc0000;
+            font-size: 12px;
+        }
+    }
+}
+/******登录样式结束********/

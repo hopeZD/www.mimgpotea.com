@@ -1,0 +1,79 @@
+
+		
+	<div class="container">
+		<div class="ceremony">
+			<p class="ceremony-title">以茶会友，分享点滴喜悦</p>	
+			<div class="ceremony-con cl">
+				<div class="ceremony-con-list">
+					<div class="cere-head">
+						<p><a href="<?php echo \common\widgets\FVariable::$productCeredetails_url ?>">日照名坡绿茶那些事儿</a></p>
+						<span>Maxcer 发表于 2015-08-21</span>
+					</div>
+					<div class="cere-con">
+						<span class="cere-span-first">“</span>日照名坡绿茶产于山东省日照市。日照是世界茶学家公认的三大海绿茶城市之一。日照绿茶具有干茶墨绿，冲泡后汤色黄绿明亮、栗香浓郁、回味甘醇、叶片厚、香气高、耐冲泡等独特优良品质，被誉为“中国绿茶新贵”。
+						<span class="cere-span-last">”</span>
+					</div>
+					<div class="cere-bottom">
+						<span><img src="/img/u39.png" />(1212)</span><span><img src="/img/u43.png" />(1212)</span>
+					</div>
+				</div>
+				
+				<div class="ceremony-con-list">
+					<div class="cere-head">
+						<p><a href="<?php echo \common\widgets\FVariable::$productCeredetails_url ?>">日照名坡绿茶那些事儿</a></p>
+						<span>Maxcer 发表于 2015-08-21</span>
+					</div>
+					<div class="cere-con">
+						<span class="cere-span-first">“</span>日照名坡绿茶产于山东省日照市。日照是世界茶学家公认的三大海绿茶城市之一。日照绿茶具有干茶墨绿，冲泡后汤色黄绿明亮、栗香浓郁、回味甘醇、叶片厚、香气高、耐冲泡等独特优良品质，被誉为“中国绿茶新贵”。
+						<span class="cere-span-last">”</span>
+					</div>
+					<div class="cere-bottom">
+						<span><img src="/img/u39.png" />(1212)</span><span><img src="/img/u43.png" />(1212)</span>
+					</div>
+				</div>
+				
+				<div class="ceremony-con-list">
+					<div class="cere-head">
+						<p><a href="<?php echo \common\widgets\FVariable::$productCeredetails_url ?>">日照名坡绿茶那些事儿</a></p>
+						<span>Maxcer 发表于 2015-08-21</span>
+					</div>
+					<div class="cere-con">
+						<span class="cere-span-first">“</span>日照名坡绿茶产于山东省日照市。日照是世界茶学家公认的三大海绿茶城市之一。日照绿茶具有干茶墨绿，冲泡后汤色黄绿明亮、栗香浓郁、回味甘醇、叶片厚、香气高、耐冲泡等独特优良品质，被誉为“中国绿茶新贵”。
+						<span class="cere-span-last">”</span>
+					</div>
+					<div class="cere-bottom">
+						<span><img src="/img/u39.png" />(1212)</span><span><img src="/img/u43.png" />(1212)</span>
+					</div>
+				</div>
+				
+				<div class="ceremony-con-list">
+					<div class="cere-head">
+						<p><a href="<?php echo \common\widgets\FVariable::$productCeredetails_url ?>">日照名坡绿茶那些事儿</a></p>
+						<span>Maxcer 发表于 2015-08-21</span>
+					</div>
+					<div class="cere-con">
+						<span class="cere-span-first">“</span>日照名坡绿茶产于山东省日照市。日照是世界茶学家公认的三大海绿茶城市之一。日照绿茶具有干茶墨绿，冲泡后汤色黄绿明亮、栗香浓郁、回味甘醇、叶片厚、香气高、耐冲泡等独特优良品质，被誉为“中国绿茶新贵”。
+						<span class="cere-span-last">”</span>
+					</div>
+					<div class="cere-bottom">
+						<span><img src="/img/u39.png" />(1212)</span><span><img src="/img/u43.png" />(1212)</span>
+					</div>
+				</div>
+				
+				<div class="ceremony-con-list">
+					<div class="cere-head">
+						<p><a href="<?php echo \common\widgets\FVariable::$productCeredetails_url ?>">日照名坡绿茶那些事儿</a></p>
+						<span>Maxcer 发表于 2015-08-21</span>
+					</div>
+					<div class="cere-con">
+						<span class="cere-span-first">“</span>日照名坡绿茶产于山东省日照市。日照是世界茶学家公认的三大海绿茶城市之一。日照绿茶具有干茶墨绿，冲泡后汤色黄绿明亮、栗香浓郁、回味甘醇、叶片厚、香气高、耐冲泡等独特优良品质，被誉为“中国绿茶新贵”。
+						<span class="cere-span-last">”</span>
+					</div>
+					<div class="cere-bottom">
+						<span><img src="/img/u39.png" />(1212)</span><span><img src="/img/u43.png" />(1212)</span>
+					</div>
+				</div>
+			</div>		
+		</div>
+	</div>
+			

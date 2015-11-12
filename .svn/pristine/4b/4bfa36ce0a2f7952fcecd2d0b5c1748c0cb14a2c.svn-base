@@ -1,0 +1,66 @@
+<?php
+    namespace common\widgets;
+ class  Variable {
+     /*
+      * 一些session字符串常量
+      */
+     public  static   $session_userId_str='userId';
+
+     /*
+      * 一些路径URL
+      */
+     public static $home_url='/';
+     public static $userMange_url='/usermanger';
+     public static $orderManger_url='/ordermanger';
+     public static $productManger_url='/productmanger';
+     public static $sellerManger_url='/productmanger/seller';
+     public static $productCat_url='/productmanger/productcat';
+     public static $activityList_url='/activitymanger/activitylist';
+     public static $activityWater_url='/activitymanger/activitywater';
+     public static $articleManger_url='/multimediamanger/articlemanger';
+     public static $materialManger_url='/multimediamanger/materialmanger';
+     public static $adminUserManger_url='/websettingmanger/adminusermanger';
+     public static $setting_url='/websettingmanger/setting';
+     public static $area_url='/websettingmanger/area';
+     public static $smsLog_url='/websettingmanger/smslog';
+     public static $express_url='/websettingmanger/express';
+     public static $addCustomer_url='/usermanger/addcustomer';
+     public static $addSeller_url='/productmanger/addseller';
+     public static $eidtSeller_url='/productmanger/eidtseller';
+     public static $adddUsller_getCityList_url='/productmanger/getcitylist';
+     public static $addProduct_url='/productmanger/addproduct';
+     public static $editProduct_url='/productmanger/editproduct';
+
+     /*
+      * 一些视图文件
+      */
+     public static $userMange_view='/userManger/userManger';
+     public static $siteIndex_view='/site/index';
+     public static $siteLogin_view='/site/login';
+     public static $layoutAdminLeftMenu_view='/layouts/adminLeftMenu';
+     public static $userManger_view='/userManger/userManger';
+     public static $orderManger_view='/orderManger/orderManger';
+     public static $productManger_view='/productManger/productManger';
+     public static $sellerManger_view='/productManger/sellerManger';
+     public static $productCat_view='/productManger/productCat';
+     public static $activityList_view='/activityManger/activityList';
+     public static $activityWater_view='/activityManger/activityWater';
+     public static $articleManger_view='/multimediaManger/articleManger';
+     public static $materialManger_view='/multimediaManger/materialManger';
+     public static $layoutMaterialMenu_view='/layouts/materialMenu';
+     public static $adminUserManger_view='/webSettingManger/adminUserManger';
+     public static $setting_view='/webSettingManger/setting';
+     public static $area_view='/webSettingManger/area';
+     public static $smsLog_view='/webSettingManger/smsLog';
+     public static $express_view='/webSettingManger/express';
+     public static $addSeller_view='/productManger/addSeller';
+     public static $editSeller_view='/productManger/eidtSeller';
+     public static $addProduct_view='/productManger/addProduct';
+     public static $editProduct_view='/productManger/editProduct';
+
+     /*
+      * 一些字符串常量
+      */
+     public static $imageType='';
+
+}

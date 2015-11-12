@@ -1,0 +1,17 @@
+<?php
+return [
+    'components' => [
+        'db'=>array(
+            'class'=> 'yii\db\Connection',
+            'dsn' => 'mysql:host=192.168.2.6;dbname=mingpotea',
+            'username' => 'root',
+            'password' => '312461613',
+            'charset' => 'utf8',
+            'tablePrefix'=> 'mp_',
+        ),
+        'mailer' => [
+            'class' => 'yii\swiftmailer\Mailer',
+            'viewPath' => '@common/mail',
+        ],
+    ],
+];

@@ -1,0 +1,33 @@
+<?php
+namespace frontend\assets;
+use yii\web\AssetBundle;
+
+class AppAsset extends AssetBundle
+{
+    public $basePath = '@webroot';
+    public $baseUrl = '@web';
+    public $css = [
+        'css/reset.css',
+        'css/comment.css',
+        'css/index.css',
+        'css/otherpage.css'
+    ];
+    public $js = [
+        'js/jquery.min.js',
+        'js/jquery.SuperSlide.2.1.1.js',
+//        'js/jquery.fullPage.min.js',
+        'js/html5.js',
+        'js/selectivizr.js',
+        'js/comment.js',
+    ];
+
+    public static function addScript($view, $jsfile) {
+        $view->registerJsFile($jsfile, [AppAsset::className(), 'depends' => 'yii\web\AssetBundle']);
+    }
+
+
+    public $depends = [
+//        'yii\web\YiiAsset'
+//        'yii\bootstrap\BootstrapAsset',
+    ];
+}

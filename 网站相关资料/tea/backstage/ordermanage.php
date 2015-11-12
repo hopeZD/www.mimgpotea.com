@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>茶叶商城管理系统_首页</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/admin.css" />
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<!--[if IE]>  
+        <script src="js/html5.js"></script> 
+        <script src="js/selectivizr.js"></script> 
+        <![endif]--> 
+	</head>
+	<body>
+		<div class="container adminIndex">
+			<?php include('adminhead.php'); ?>
+			
+			<div class="adminIndex-con">
+				<div class="adminCon-left">
+				   <?php $admin_cur="order"; include('adminLeftMenu.php'); ?>
+				</div>
+				<div class="adminCon-right">
+					<div class="member">
+						<div class="member-head">
+							<span class="meber-span">订单状态 
+								<select>
+									<option>全部</option>
+									<option>待支付</option>
+									<option>待发货</option>
+									<option>已发货</option>
+									<option>已完成</option>
+									<option>已取消</option>
+								</select>
+							</span>
+							<form>
+								<input type="text" class="member-form-text" placeholder="下单人（昵称）" />
+								<input type="text" class="member-form-text" placeholder="订单日期" />
+								<input type="text" class="member-form-text" placeholder="订单号" />
+								<input type="submit" value="查询" class="member-form-btn" />
+							</form>							
+						</div>
+						<div class="member-con orderM-con">
+							<table cellpadding="0" cellspacing="0" border="0" class="admin-table">
+								<tr>
+									<th>序号</th>
+									<th>订单号</th>
+									<th>订单日期</th>
+									<th>订单状态</th>
+									<th>下单人（昵称）</th>
+									<th>订单金额</th>
+									<th>操作</th>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>11111125436851478596</td>
+									<td>2015-06-12</td>
+									<td>待支付</td>
+									<td>哈哈哈哈哈哈哈哈</td>
+									<td>￥11111.00</td>
+									<td><a href="orderDetails.php" target="_blank">详情</a><a href="">取消</a></td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>111111</td>
+									<td>2015-06-12</td>
+									<td>待发货</td>
+									<td>哈哈哈</td>
+									<td>￥11.00</td>
+									<td><a href="javascript:;" class="release">发货</a><a href="orderDetails.php" class="among" target="_blank">详情</a><a href="">取消</a></td>
+								</tr>
+								<tr>
+									<td>123354561</td>
+									<td>111111</td>
+									<td>2015-06-12</td>
+									<td>已发货</td>
+									<td>哈哈哈</td>
+									<td>￥11.00</td>
+									<td><a href="orderDetails.php" target="_blank">详情</a><a href="">取消</a></td>
+								</tr>
+								<tr>
+									<td>123354561</td>
+									<td>111111</td>
+									<td>2015-06-12</td>
+									<td>已完成</td>
+									<td>哈哈哈</td>
+									<td>￥11.00</td>
+									<td><a href="orderDetails.php" target="_blank">详情</a><a href="">取消</a></td>
+								</tr>
+								<tr>
+									<td>123354561</td>
+									<td>111111</td>
+									<td>2015-06-12</td>
+									<td>已取消</td>
+									<td>哈哈哈</td>
+									<td>￥11.00</td>
+									<td><a href="orderDetails.php" target="_blank">详情</a></td>
+								</tr>
+							</table>
+						</div>												
+					</div>
+					<ul class="adminpage">
+						<li class="adminpage-first"><a href=""><img src="img/u107.png" /></a></li>
+						<li class="adminpage-prev"><a href=""><img src="img/u105.png" /></a></li>
+						<li><a href="">1</a></li>
+						<li class="active"><a href="">2</a></li>
+						<li class="adminpage-point"><a href="">...</a></li>
+						<li><a href="">45</a></li>
+						<li><a href="">46</a></li>
+						<li class="adminpage-next"><a href=""><img src="img/u111.png" /></a></li>
+						<li class="adminpage-last"><a href=""><img src="img/u109.png" /></a></li>
+						<li class="adminpage-search"><input type="text" /><a href="">GO</a></li>	
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="discount-fixed order-fixed">
+			<div class="dis-close">×</div>
+			<div class="dis-head">添加物流信息</div>
+			<div class="dis-con">
+				<form>
+                    <input type="text" placeholder="物流公司" />
+                    <input type="text" placeholder="货运单号" />
+					<input type="submit" value="确定" class="dis-btn" />
+				</form>				
+			</div>
+		</div>
+		<script type="text/javascript" src="js/admin.js" ></script>
+	</body>
+</html>

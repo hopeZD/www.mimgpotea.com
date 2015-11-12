@@ -1,0 +1,85 @@
+<div class="container adminIndex">
+    <?php include('adminhead.php'); ?>
+
+    <div class="adminIndex-con">
+        <div class="adminCon-left">
+            <?php
+                $admin_cur="admin";
+                echo   $this->render(\common\widgets\Variable::$layoutAdminLeftMenu_view);
+                 ?>
+        </div>
+        <div class="adminCon-right">
+
+            <div class="seller">
+                <div class="seller-head">
+                    <a href="javascript:;" class="seller-head-add">+添加管理员</a>
+                </div>
+
+                <div class="adminuser">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>序号</td>
+                            <td>用户名</td>
+                            <td>密码</td>
+                            <td>手机号码</td>
+                            <td>角色</td>
+                            <td>上次登录IP</td>
+                            <td>上次登录时间</td>
+                            <td>注册时间</td>
+                            <td>操作</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>哈哈哈哈哈哈哈哈哈哈哈哈哈</td>
+                            <td>121212</td>
+                            <td>1111111111</td>
+                            <td>管理员</td>
+                            <td>196.168.1.1</td>
+                            <td>2015-02-35 09:14:02</td>
+                            <td>2015-02-35 09:14:02</td>
+                            <td><a href="">冻结</a><a href="">编辑</a><a href="">删除</a></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>哈哈哈哈</td>
+                            <td>121212</td>
+                            <td>1111111111</td>
+                            <td>超级管理员</td>
+                            <td>196.168.115.125</td>
+                            <td>2015-02-35 09:14:02</td>
+                            <td>2015-02-35 09:14:02</td>
+                            <td><a href="">冻结</a><a href="">编辑</a><a href="">删除</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <ul class="adminpage">
+                <li class="adminpage-first"><a href=""><img src="img/u107.png" /></a></li>
+                <li class="adminpage-prev"><a href=""><img src="img/u105.png" /></a></li>
+                <li><a href="">1</a></li>
+                <li class="active"><a href="">2</a></li>
+                <li class="adminpage-point"><a href="">...</a></li>
+                <li><a href="">45</a></li>
+                <li><a href="">46</a></li>
+                <li class="adminpage-next"><a href=""><img src="img/u111.png" /></a></li>
+                <li class="adminpage-last"><a href=""><img src="img/u109.png" /></a></li>
+                <li class="adminpage-search"><input type="text" /><a href="">GO</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="discount-fixed seller-fixed" id="seller-fixed">
+    <div class="dis-close">×</div>
+    <div class="dis-head">添加管理员</div>
+    <div class="dis-con">
+        <form>
+            <input type="text" placeholder="用户名" />
+            <input type="password" placeholder="密码" />
+            <input type="text" placeholder="手机号码" />
+            <input type="text" placeholder="角色" />
+            <input type="submit" value="确定" class="dis-btn" />
+        </form>
+    </div>
+</div>

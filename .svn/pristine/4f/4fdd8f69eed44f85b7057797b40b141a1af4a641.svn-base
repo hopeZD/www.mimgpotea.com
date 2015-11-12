@@ -1,0 +1,32 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Administrator
+ * Date: 2015/9/18
+ * Time: 14:24
+ */
+namespace backend\controllers;
+use yii\web\Controller;
+use yii\web\Session;
+use app\models\AdminUser;
+use common\Widgets\Tool;
+use common\Widgets\Variable;
+class MultimediamangerController extends  Controller{
+    public function actionArticlemanger(){
+        $user=new AdminUser();
+        if(!$user->checkUserIsLogin()){
+            $this->redirect(Variable::$home_url);
+            return;
+        }
+        return $this->render(Variable::$articleManger_view);
+    }
+
+    public function actionMaterialmanger(){
+        $user=new AdminUser();
+        if(!$user->checkUserIsLogin()){
+            $this->redirect(Variable::$home_url);
+            return;
+        }
+        return $this->render(Variable::$materialManger_view);
+    }
+}
