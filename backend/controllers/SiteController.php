@@ -11,7 +11,7 @@ use yii\web\Cookie;
 use backend\models\AdminUser;
 
 /**
- * 网站首页 登陆
+ * 网站首页 登
  */
 class SiteController extends Controller
 {
